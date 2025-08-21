@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact-us.css">
+</head>
+<body>
+     <!-- Above-Navbar -->
+    <div id="above-nav-maon-container">
+        <div id="above-nav-left">
+            <p>#1 Ecommerce Automation Consultants in the UAE and Across the Gulf</p>
+        </div>
+        <div id="above-nav-right">
+            <div id="above-nav-right-box">
+                <img src="https://img.icons8.com/?size=100&id=9730&format=png&color=000000" alt="">
+                <a href="#">+971 542 265 592</a>
+            </div>
+            <div id="above-nav-right-box">
+                <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000" alt="">
+                <a href="#">info@amazonconsultant.ae</a>
+            </div>
+        </div>
+    </div>
+    <!-- Above-Navbar -->
+    <!-- Navbar -->
+     <nav class="navbar">
+  <div id="nav-inner">
+        <a href="index.html"> <img src="images/Logo.svg" class="logo" alt=""></a>
+
+    <ul class="nav-links">
+      <li><a href="#">About Us</a></li>
+      <li class="dropdown">
+        <a href="#">Services <span>▾</span></a>
+        <ul class="dropdown-content">
+         <li><a href="#">Amazon Book Publishing</a></li>
+      <li><a href="#">Tiktok Shop Automation</a></li>
+      <li><a href="#">Walmart Automation</a></li>
+      <li><a href="#">Shopify Automation</a></li>
+      <li><a href="#">ebay Automation</a></li>
+      <li><a href="#">Noon Store</a></li>
+        </ul>
+      </li>
+      <li><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+    <button class="launch-btn">Launch My Store</button>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+<div class="side-menu" id="sideMenu">
+  <span class="close-btn" onclick="toggleMenu()">&times;</span>
+  <img src="images/Logo.svg" class="logo" alt="">
+  <ul>
+    <li><a href="#">About Us</a></li>
+    <li class="dropdown-toggle" onclick="toggleSideDropdown(this)">
+      Services <span>▾</span>
+    </li>
+    <ul class="side-dropdown">
+      <li><a href="#">Amazon Book Publishing</a></li>
+      <li><a href="#">Tiktok Shop Automation</a></li>
+      <li><a href="#">Walmart Automation</a></li>
+      <li><a href="#">Shopify Automation</a></li>
+      <li><a href="#">ebay Automation</a></li>
+      <li><a href="#">Noon Store</a></li>
+    </ul>
+    <li><a href="contact-us.html">Contact Us</a></li>
+  </ul>
+  <button class="launch-btn" id="sidemenu-launch-btn">Launch My Store</button>
+</div>
+<script>
+  function toggleMenu() {
+    document.getElementById("sideMenu").classList.toggle("active");
+  }
+
+  function toggleSideDropdown(el) {
+    el.classList.toggle("active");
+    el.nextElementSibling.classList.toggle("active");
+  }
+</script>
+    <!-- Navbar -->
+
+
+
+
+
+
+
+<!-- Contact Us Work -->
+ <div class="contact-header">
+    <div class="contact-header-inner">
+        <div class="contact-header-left">
+            <h1>Let’s Connect With Us And Start Your Store</h1>
+            <p>Have queries, need a quote, or want to place an order? We're here to help! Connect with our customer support team anytime—day or night. Our assistance is available 24/7!</p>
+            <div class="header-left-btn-container">
+                <button class="header-left-primary-btn">Get Your Amazon Store Automated <img src="https://img.icons8.com/?size=100&id=12628&format=png&color=000000" alt=""></button>
+                <button class="header-left-secondary-btn"><img src="https://img.icons8.com/?size=100&id=9730&format=png&color=FFFFFF" alt=""> +92 123 456 789</button>
+            </div>
+        </div>
+        <div class="contact-header-right">
+            <img src="https://www.amazonconsultant.ae/assets/frontend/images/sample/amazon-consultants-contact.webp" alt="">
+        </div>
+
+    </div>
+ </div>
+
+
+ <!-- Contact Section -->
+    <!-- Main container for the entire contact section -->
+    <section id="contact-section-main" class="contact-section-main">
+        <div class="contact-section-card">
+            <!-- Inner container for the two-column layout -->
+            <div class="contact-section-columns">
+
+                <!-- Left column: "Get in Touch" information -->
+                <div id="contact-section-info" class="contact-section-info">
+                    
+                    <!-- Icon placeholder: a simple hand emoji -->
+                    <div class="contact-section-icon-container">
+                        👋
+                    </div>
+
+                    <!-- Heading -->
+                    <h3 class="contact-section-heading">
+                        Get in Touch
+                    </h3>
+
+                    <!-- Sub-heading -->
+                    <p class="contact-section-subheading">
+                        Need assistance regarding your project? Give us a quick call on:
+                    </p>
+
+                    <!-- Phone Number -->
+                    <p class="contact-section-phone">
+                        +971 542 265 592
+                    </p>
+
+                    <!-- Business hours -->
+                    <p class="contact-section-hours">
+                        We are available from Mon to Fri (9 am - 6 pm)
+                    </p>
+                    
+                    <!-- OR divider with lines -->
+                    <div class="contact-section-divider">
+                        <div class="contact-section-divider-line"></div>
+                        <span class="contact-section-divider-text">OR</span>
+                        <div class="contact-section-divider-line"></div>
+                    </div>
+                    
+                    <!-- Live Chat button -->
+                    <button id="contact-section-chat-button" class="contact-section-chat-button">
+                        <!-- Inline SVG for the chat icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.135 2.918 2.529 3.018l-.348 2.915c-.09.75.27 1.5.857 1.954.587.454 1.4.606 2.051.411l.666-.2c.421.136.861.21 1.306.21 3.55 0 6.447-2.923 6.447-6.529S15.55 6.236 12 6.236c-3.55 0-6.447 2.923-6.447 6.529l.006.012c.036.756.248 1.492.628 2.167" />
+                        </svg>                      
+                        <span>Start Live Chat</span>
+                    </button>
+                </div>
+
+                <!-- Right column: Contact Form -->
+                <div id="contact-section-form-container" class="contact-section-form-container">
+                    
+                    <!-- Form Heading -->
+                    <h3 class="contact-section-form-heading">
+                        Need Support?
+                    </h3>
+
+                    <!-- Form Sub-heading -->
+                    <p class="contact-section-form-subheading">
+                        Reach out to our team, and we'll respond as soon as possible with tailored packages.
+                    </p>
+
+                    <!-- The contact form -->
+                    <form id="contact-section-contact-form" class="contact-section-contact-form">
+                        
+                        <!-- Name and Phone fields (side-by-side on desktop) -->
+                        <div class="contact-section-input-group">
+                            <input type="text" id="contact-section-name" class="contact-section-input" placeholder="Name">
+                            <input type="text" id="contact-section-phone" class="contact-section-input" placeholder="Phone No">
+                        </div>
+                        
+                        <!-- Email field -->
+                        <div>
+                            <input type="email" id="contact-section-email" class="contact-section-input" placeholder="Email">
+                        </div>
+
+                        <!-- Details textarea -->
+                        <div>
+                            <textarea id="contact-section-details" class="contact-section-input" placeholder="Details"></textarea>
+                        </div>
+                        
+                        <!-- Response time message and submit button -->
+                        <div class="contact-section-submit-container">
+                            <p class="contact-section-response-time">
+                                We normally respond within 24 hours. If you haven't received anything, check your spam folder.
+                            </p>
+                            <button type="submit" id="contact-section-submit-button" class="contact-section-submit-button">
+                                GROW YOUR PRESENCE
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<!-- Contact Us Work -->
+
+
+
+
+
+
+
+
+
+    
+<!-- Footer -->
+   <footer class="footer">
+        <!-- Top Section -->
+        <div class="footer-top">
+            <div class="footer-top-left">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/logo/amazon-consultant.svg" alt="Amazon Consultant Logo">
+            </div>
+            <div class="footer-top-right">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/trustpilot.webp" alt="Trustpilot">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/clutch.webp" alt="Clutch">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/bark.webp" alt="Bark">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/reviews-io.webp" alt="Reviews.io">
+            </div>
+        </div>
+        <!-- Main Section -->
+        <div class="footer-main">
+            <!-- Column 1 -->
+            <div class="footer-column">
+                <h4>Smart Automation For Successful Ecommerce</h4>
+                <p>
+                    AmazonConsultant.ae is a top e-commerce automation company that helps you grow your investments by 4 times with smart automation. From store setup to product listings, we've got you covered.
+                </p>
+                <div class="payment-cards">
+                    <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/payment-cards.webp" alt="Payment Cards">
+                </div>
+            </div>
+            <!-- Column 2 -->
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="contact-us.html">Contact us</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">FREE Consultation</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <!-- Column 3 -->
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Amazon Book Publishing</a></li>
+                    <li><a href="#">Tiktok Shop Automation</a></li>
+                    <li><a href="#">Walmart Automation</a></li>
+                    <li><a href="#">Shopify Automation</a></li>
+                    <li><a href="#">eBay Automation</a></li>
+                    <li><a href="#">Noon Store</a></li>
+                </ul>
+            </div>
+            <!-- Column 4 -->
+            <div class="footer-column">
+                <h4>Reach Us:</h4>
+                <div class="reach-us-item">
+                    <span>&#9993;</span> info@amazonconsultant.ae
+                </div>
+                <div class="reach-us-item">
+                    <span>&#9742;</span> +971 542 265 592
+                </div>
+                <div class="reach-us-item">
+                    <span>&#9742;</span> +971 542 265 592
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img src="https://img.icons8.com/?size=100&id=106163&format=png&color=000000" alt=""></a>
+                    <a href="#"><img src="https://img.icons8.com/?size=100&id=32309&format=png&color=000000" alt=""></a>
+                    <a href="#"><img src="https://img.icons8.com/?size=100&id=A4DsujzAX4rw&format=png&color=000000" alt=""></a>
+                    <a href="#"><img src="https://img.icons8.com/?size=100&id=34349&format=png&color=000000" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            &copy; 2023 Amazon Consultant AE. All rights reserved
+        </div>
+    </footer>
+
+</body>
+</html>
