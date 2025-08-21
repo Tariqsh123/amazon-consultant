@@ -443,5 +443,494 @@
         </div>
     </div>
 
+
+    <!-- Testimonial -->
+     <section id="review-heading-section">
+  <div class="review-heading-container">
+   
+    <h2 class="review-heading-h2"> <span class="review-heading-span">15K+ Satisfied</span> Clients of Our Amazon Automation Solutions</h2>
+    <p class="review-heading-p">Without any technical or design expertise.</p>
+  </div>
+</section>
+
+<div class="carousel-container">
+  <div class="carousel-track">
+    <!-- 1 -->
+    <div class="review-card">
+      <p class="review-text">
+        Publishing with Spines was one of the best decisions I’ve made as an author. The process was straightforward, the team was patient, and my book came out even better than I imagined.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Emily Carter</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="review-card">
+      <p class="review-text">
+        What I loved most was how Spines made everything stress-free. From editing to design, they handled it all. I finally felt like my story was in the hands of true professionals.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author James Rodriguez</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="review-card">
+      <p class="review-text">
+        I never thought publishing could be this easy. The team at Spines guided me at every step and gave my book a professional finish that I am truly proud of.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Sophia Mitchell</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+     <!-- 1 -->
+    <div class="review-card">
+      <p class="review-text">
+        Publishing with Spines was one of the best decisions I’ve made as an author. The process was straightforward, the team was patient, and my book came out even better than I imagined.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Emily Carter</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="review-card">
+      <p class="review-text">
+        What I loved most was how Spines made everything stress-free. From editing to design, they handled it all. I finally felt like my story was in the hands of true professionals.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author James Rodriguez</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="review-card">
+      <p class="review-text">
+        I never thought publishing could be this easy. The team at Spines guided me at every step and gave my book a professional finish that I am truly proud of.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Sophia Mitchell</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+     <!-- 1 -->
+    <div class="review-card">
+      <p class="review-text">
+        Publishing with Spines was one of the best decisions I’ve made as an author. The process was straightforward, the team was patient, and my book came out even better than I imagined.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Emily Carter</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="review-card">
+      <p class="review-text">
+        What I loved most was how Spines made everything stress-free. From editing to design, they handled it all. I finally felt like my story was in the hands of true professionals.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author James Rodriguez</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="review-card">
+      <p class="review-text">
+        I never thought publishing could be this easy. The team at Spines guided me at every step and gave my book a professional finish that I am truly proud of.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Sophia Mitchell</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(function(){
+    const $track = $(".carousel-track");
+    let $cards = $(".review-card");
+    let cardWidth = $cards.outerWidth(true);
+    let index = 1; 
+    let isDragging = false, startX, startTranslate, currentX;
+    let animationFrame;
+    $track.prepend($cards.last().clone());
+    $track.append($cards.first().clone());
+    $cards = $(".review-card");
+    cardWidth = $cards.outerWidth(true);
+    setTranslate(-cardWidth * index);
+    function getTranslateX() {
+        const style = window.getComputedStyle($track[0]);
+        const matrix = new WebKitCSSMatrix(style.transform);
+        return matrix.m41;
+    }
+    function setTranslate(x, withTransition = false) {
+        $track.css("transition", withTransition ? "transform 0.3s ease" : "none");
+        $track.css("transform", `translateX(${x}px)`);
+    }
+    function snapToCard() {
+        let moveX = getTranslateX();
+        let dragDistance = moveX - startTranslate;
+        let threshold = cardWidth / 4;
+        if(dragDistance < -threshold) index++;
+        else if(dragDistance > threshold) index--;
+        setTranslate(-index * cardWidth, true);
+        $track.one("transitionend", function(){
+            if(index === 0){ 
+                index = $cards.length - 2;
+                setTranslate(-index * cardWidth);
+            } 
+            else if(index === $cards.length - 1){ 
+                index = 1;
+                setTranslate(-index * cardWidth);
+            }
+        });
+    }
+    $track.on("mousedown touchstart", function(e){
+        isDragging = true;
+        startX = e.pageX || e.originalEvent.touches[0].pageX;
+        startTranslate = getTranslateX();
+        cancelAnimationFrame(animationFrame);
+    });
+    $(document).on("mousemove touchmove", function(e){
+        if(!isDragging) return;
+        currentX = (e.pageX || e.originalEvent.touches[0].pageX) - startX;
+        e.preventDefault(); 
+        function update() {
+            setTranslate(startTranslate + currentX);
+            if(isDragging) animationFrame = requestAnimationFrame(update);
+        }
+        cancelAnimationFrame(animationFrame);
+        animationFrame = requestAnimationFrame(update);
+    });
+    $(document).on("mouseup touchend", function(){
+        if(!isDragging) return;
+        isDragging = false;
+        cancelAnimationFrame(animationFrame);
+        snapToCard();
+    });
+    $(window).on("resize", function(){
+        cardWidth = $(".review-card").outerWidth(true);
+        setTranslate(-index * cardWidth);
+    });
+});
+</script>
+
+<!-- Consultant section -->
+ <section class="home-consultant-section">
+    <div class="home-consultant-bg"></div>
+    <div class="home-consultant-container">
+        <div class="home-consultant-row home-consultant-align-items-center">
+            <div class="home-consultant-col-6 home-consultant-left">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/sample/get-amazon-store.webp" alt="Get Amazon Store" class="home-consultant-image">
+            </div>
+            <div class="home-consultant-col-6 home-consultant-right">
+                <h2 class="home-consultant-title">Get Amazon's 'Done For You' Services for 100% Store Management</h2>
+                <ul class="home-consultant-list">
+                    <li class="home-consultant-item">We handle everything from store launch to order fulfillment without hassle.</li>
+                    <li class="home-consultant-item">Our growth strategy is expert-led, no matter if it's listing, pricing or marketing.</li>
+                    <li class="home-consultant-item">Experience no interruption as it's completely automated from start to end.</li>
+                </ul>
+                <a href="#" class="home-consultant-button">
+                    <i class="fas fa-book-open"></i> Book A Free Consultation
+                </a>
+            </div>
+        </div>
+        <div class="home-consultant-stats-wrapper">
+            <div class="home-consultant-stats-text">
+                <p>Our reputation as one of the top Amazon automation companies in Dubai, Ajman, Sharjah, Fujairah, and across the Gulf isn't by chance—it's built on our proven expertise:</p>
+            </div>
+            <div class="home-consultant-row home-consultant-stats-row home-consultant-text-center">
+                <div class="home-consultant-stat-item home-consultant-col-6 home-consultant-col-md-3">
+                    <div class="home-consultant-stat-number">24K+</div>
+                    <div class="home-consultant-stat-description">Businesses have been automated on various platforms.</div>
+                </div>
+                <div class="home-consultant-stat-item home-consultant-col-6 home-consultant-col-md-3">
+                    <div class="home-consultant-stat-number">300%</div>
+                    <div class="home-consultant-stat-description">Profit growth to seven figures within a year.</div>
+                </div>
+                <div class="home-consultant-stat-item home-consultant-col-6 home-consultant-col-md-3">
+                    <div class="home-consultant-stat-number">99%</div>
+                    <div class="home-consultant-stat-description">Order accuracy is achieved with seamless fulfillment.</div>
+                </div>
+                <div class="home-consultant-stat-item home-consultant-col-6 home-consultant-col-md-3">
+                    <div class="home-consultant-stat-number">1.5B+</div>
+                    <div class="home-consultant-stat-description">Products are sold on Amazon and beyond.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Automated Amazon -->
+ <section id="automated-amazon-section" class="automated-amazon-section">
+  <div class="automated-amazon-container">
+    <div class="automated-amazon-image-column">
+      <img src="https://www.amazonconsultant.ae/assets/frontend/images/sample/amazon-automation-agency.webp" alt="Automated Amazon Store">
+    </div>
+    <div class="automated-amazon-content-column">
+      <h2 class="automated-amazon-heading">Hire Top-Tier Amazon Automation Agency for Effortless Growth</h2>
+      <ul class="automated-amazon-list">
+        <li>We let you start your own Amazon business by automating everything. You no longer have to deal with technicalities or constant monitoring of inventory; we automate everything.</li>
+        <li>Whether you’re a skilled seller or new to the e-commerce world, we’ve got you covered. Our advanced automation tools streamline everything for outstanding results and growth.</li>
+        <li>Whether you’re a skilled seller or new to the e-commerce world, we’ve got you covered. Our advanced automation tools streamline everything for outstanding results and growth.</li>
+      </ul>
+      <div class="automated-amazon-buttons">
+        <a href="#" class="automated-amazon-button automated-amazon-build-store">Build My Amazon Store </a>
+        <a href="tel:+971542265592" class="automated-amazon-button automated-amazon-phone">+971 542 265 592</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+    <div class="faq-container">
+        <div class="faq-text-container">
+            <h2 class="faq-main-title">Got Questions? We've Got Answers! Explore Our Faqs To Learn How</h2>
+            <p class="faq-subtitle">Have you got questions? We've got your answers! Explore our FAQs to learn more about our amazon automation services and how we can assist you in scaling your business.</p>
+        </div>
+        <div class="faq-row">
+            <div class="faq-col-7">
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How Does Amazon Automation Work at your Agency in the Gulf?
+                            <span class="faq-icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-closed" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our Amazon automation service in the Gulf is a complete hands-off solution. We handle everything from A-Z, including product research, sourcing, listing optimization, inventory management, customer service, and marketing campaigns to ensure your store is profitable and efficient without you lifting a finger.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How Much Investment Is Needed For Amazon Automation Services?
+                            <span class="faq-icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-closed" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The initial investment for Amazon automation services varies depending on the business model and the desired scale. We offer various packages and can provide a detailed breakdown during a free consultation, tailored to your budget and profit goals.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How Long Does Building An Automated Amazon Store Take in The UAE?
+                            <span class="faq-icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-closed" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Typically, the process of setting up and launching a fully automated Amazon store in the UAE can take anywhere from 4 to 8 weeks. This timeline includes all the necessary steps like account setup, product research, and initial inventory stocking.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Are You Really The Best Amazon FBA Automation Service in The UAE?
+                            <span class="faq-icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-closed" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our track record and client testimonials speak for themselves. With years of experience and a proven strategy for growth, our team is dedicated to delivering the highest quality service and maximizing your return on investment.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How Do You Set Up And Launch An Automated E-Commerce Store?
+                            <span class="faq-icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-closed" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We begin with a strategic planning phase, followed by store setup, product selection and listing, and finally, the launch of your store. Our team handles all the technical details and ensures a smooth and effective launch.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Are Your Automated Amazon Stores Legit? How Do You Work On Legally?
+                            <span class="faq-icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-closed" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our services operate within all of Amazon's terms of service and are fully compliant with legal regulations in the region. We ensure that all our practices are legitimate, transparent, and designed for sustainable, long-term business success.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-col-3 faq-right">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/amazon-ads-certified.webp" alt="Amazon Ads Certified" class="faq-image">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/helium-trusted-partner.webp" alt="Helieum Io Trusted Partner" class="faq-image faq-bottom-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+});
+</script>
+
+<!-- Above Footer -->
+ <section id="above-footer-container" class="above-footer-container">
+    <div class="above-footer-content">
+        <div class="above-footer-badge">
+            <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/ranked-amazon.webp" alt="Awarded Amazon Marketing Agency #1" class="above-footer-badge-img">
+        </div>
+        <div class="above-footer-text">
+            <h2>Invest in Amazon's Automation Business Solutions for Guaranteed Results</h2>
+            <a href="#" class="above-footer-button">Consult an Amazon Expert <span>&#9658;</span></a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+   <footer class="footer">
+        <!-- Top Section -->
+        <div class="footer-top">
+            <div class="footer-top-left">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/logo/amazon-consultant.svg" alt="Amazon Consultant Logo">
+            </div>
+            <div class="footer-top-right">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/trustpilot.webp" alt="Trustpilot">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/clutch.webp" alt="Clutch">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/bark.webp" alt="Bark">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/reviews-io.webp" alt="Reviews.io">
+            </div>
+        </div>
+        <!-- Main Section -->
+        <div class="footer-main">
+            <!-- Column 1 -->
+            <div class="footer-column">
+                <h4>Smart Automation For Successful Ecommerce</h4>
+                <p>
+                    AmazonConsultant.ae is a top e-commerce automation company that helps you grow your investments by 4 times with smart automation. From store setup to product listings, we've got you covered.
+                </p>
+                <div class="payment-cards">
+                    <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/payment-cards.webp" alt="Payment Cards">
+                </div>
+            </div>
+            <!-- Column 2 -->
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">FREE Consultation</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <!-- Column 3 -->
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Amazon Book Publishing</a></li>
+                    <li><a href="#">Tiktok Shop Automation</a></li>
+                    <li><a href="#">Walmart Automation</a></li>
+                    <li><a href="#">Shopify Automation</a></li>
+                    <li><a href="#">eBay Automation</a></li>
+                    <li><a href="#">Noon Store</a></li>
+                </ul>
+            </div>
+            <!-- Column 4 -->
+            <div class="footer-column">
+                <h4>Reach Us:</h4>
+                <div class="reach-us-item">
+                    <span>&#9993;</span> info@amazonconsultant.ae
+                </div>
+                <div class="reach-us-item">
+                    <span>&#9742;</span> +971 542 265 592
+                </div>
+                <div class="reach-us-item">
+                    <span>&#9742;</span> +971 542 265 592
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img src="https://img.icons8.com/?size=100&id=106163&format=png&color=000000" alt=""></a>
+                    <a href="#"><img src="https://img.icons8.com/?size=100&id=32309&format=png&color=000000" alt=""></a>
+                    <a href="#"><img src="https://img.icons8.com/?size=100&id=A4DsujzAX4rw&format=png&color=000000" alt=""></a>
+                    <a href="#"><img src="https://img.icons8.com/?size=100&id=34349&format=png&color=000000" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            &copy; 2023 Amazon Consultant AE. All rights reserved
+        </div>
+    </footer>
+
 </body>
 </html>
