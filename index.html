@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Consultant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Above-Navbar -->
+    <div id="above-nav-maon-container">
+        <div id="above-nav-left">
+            <p>#1 Ecommerce Automation Consultants in the UAE and Across the Gulf</p>
+        </div>
+        <div id="above-nav-right">
+            <div id="above-nav-right-box">
+                <img src="https://img.icons8.com/?size=100&id=9730&format=png&color=000000" alt="">
+                <a href="#">+971 542 265 592</a>
+            </div>
+            <div id="above-nav-right-box">
+                <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000" alt="">
+                <a href="#">info@amazonconsultant.ae</a>
+            </div>
+        </div>
+    </div>
+    <!-- Above-Navbar -->
+    <!-- Navbar -->
+     <nav class="navbar">
+  <div id="nav-inner">
+    <img src="images/Logo.svg" class="logo" alt="">
+    <ul class="nav-links">
+      <li><a href="#">About Us</a></li>
+      <li class="dropdown">
+        <a href="#">Services <span>▾</span></a>
+        <ul class="dropdown-content">
+         <li><a href="#">Amazon Book Publishing</a></li>
+      <li><a href="#">Tiktok Shop Automation</a></li>
+      <li><a href="#">Walmart Automation</a></li>
+      <li><a href="#">Shopify Automation</a></li>
+      <li><a href="#">ebay Automation</a></li>
+      <li><a href="#">Noon Store</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <button class="launch-btn">Launch My Store</button>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+<div class="side-menu" id="sideMenu">
+  <span class="close-btn" onclick="toggleMenu()">&times;</span>
+  <img src="images/Logo.svg" class="logo" alt="">
+  <ul>
+    <li><a href="#">About Us</a></li>
+    <li class="dropdown-toggle" onclick="toggleSideDropdown(this)">
+      Services <span>▾</span>
+    </li>
+    <ul class="side-dropdown">
+      <li><a href="#">Amazon Book Publishing</a></li>
+      <li><a href="#">Tiktok Shop Automation</a></li>
+      <li><a href="#">Walmart Automation</a></li>
+      <li><a href="#">Shopify Automation</a></li>
+      <li><a href="#">ebay Automation</a></li>
+      <li><a href="#">Noon Store</a></li>
+    </ul>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+  <button class="launch-btn" id="sidemenu-launch-btn">Launch My Store</button>
+</div>
+<script>
+  function toggleMenu() {
+    document.getElementById("sideMenu").classList.toggle("active");
+  }
+
+  function toggleSideDropdown(el) {
+    el.classList.toggle("active");
+    el.nextElementSibling.classList.toggle("active");
+  }
+</script>
+    <!-- Navbar -->
+     <!-- Header -->
+      <header>
+        <div class="header-left">
+            <h1>Start and Expand Your Amazon Business in UAE with Solid Results</h1>
+            <p>AmazonConsultant.ae is a trusted Amazon FBA automation platform that lets you experience exponential profits with our extensive services. Get a fully automated Amazon store like 12K+ businesses and maximize your margins like never before.</p>
+            <div class="header-left-btn-container">
+                <button class="header-left-primary-btn">Get Your Amazon Store Automated <img src="https://img.icons8.com/?size=100&id=12628&format=png&color=000000" alt=""></button>
+                <button class="header-left-secondary-btn"><img src="https://img.icons8.com/?size=100&id=9730&format=png&color=FFFFFF" alt=""> +92 123 456 789</button>
+            </div>
+            <div class="header-left-review-box">
+                <p>Their Amazon automation services scaled our business from AED 18M to 50M within two years!</p>
+                <div class="header-left-review-img-container">
+                    <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/saeed-al-mansoori.webp" alt="">
+                    <p>Saeed Al Mansoori --- Founder & CEO of EmirateX Solutions</p>
+                </div>
+                <div class="header-left-review-footer-conainer">
+                    <p>4.9/5.0 </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png" alt="">
+                    <p>20K+ Positive Reviews</p>
+                </div>
+            </div>
+        </div>
+        <div class="header-right">
+          <img src="https://www.amazonconsultant.ae/assets/frontend/images/sample/amazon-business-in-uae.webp" alt="">
+        </div>
+      </header>
+     <!-- Header -->
+
+
+     
+   <!-- Logo Container -->
+        <div id="header-logo-wrapper" >
+  <div id="header-logo-container">
+    <img src="images/amazon-kindle.webp" alt="amazon-kindle">
+    <img src="images/Barnes&Noble.png" alt="Barnes&Noble">
+    <img src="images/Rakuten_Kobo_logo.png" alt="Rakuten_Kobo_logo">
+    <img src="images/IngramSpark.jpg" alt="IngramSpark">
+    <img src="images/Google Books.png" alt="Google Books">
+    <img src="images/Lulu logo.png" alt="Lulu logo">
+
+    <!-- duplicate logos for seamless looping -->
+    <img src="images/amazon-kindle.webp" alt="amazon-kindle">
+    <img src="images/Barnes&Noble.png" alt="Barnes&Noble">
+    <img src="images/Rakuten_Kobo_logo.png" alt="Rakuten_Kobo_logo">
+    <img src="images/IngramSpark.jpg" alt="IngramSpark">
+    <img src="images/Google Books.png" alt="Google Books">
+    <img src="images/Lulu logo.png" alt="Lulu logo">
+  </div>
+</div>
+
+<!-- Start your Store  -->
+ <div class="start-your-store-text-container">
+  <h2>Start Your Store On Amazon Or Beyond, We Offer Solution For Every E-Commerce Platform</h2>
+  <p>Launch your store and automate your business effortlessly, no matter the e-commerce platform you’re on. Although we handle Amazon, noon, Shopify, eBay, etc, here are a few platforms we master:</p>
+ </div>
+ <!-- boxes -->
+  
+<div class="start-your-store-wrap">
+  <div class="start-your-store-grid">
+    
+    <div class="start-your-store-card">
+      <img src="https://img.icons8.com/?size=100&id=UbAOCJARZDAP&format=png&color=000000" alt="default" class="start-your-store-default-img">
+      <img src="https://img.icons8.com/?size=100&id=UbAOCJARZDAP&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
+      <h3>Shopify Automation</h3>
+      <p>We help you streamline your Shopify store with our automated solutions for remarkable growth.</p>
+    </div>
+
+    <div class="start-your-store-card">
+      <img src="https://img.icons8.com/?size=100&id=56765&format=png&color=000000" alt="default" class="start-your-store-default-img">
+      <img src="https://img.icons8.com/?size=100&id=56765&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
+      <h3>Walmart Automation</h3>
+      <p>Scaling your walmart business is now possible with our pricing and inventory management.</p>
+    </div>
+
+    <div class="start-your-store-card">
+      <img src="https://img.icons8.com/?size=100&id=118638&format=png&color=000000" alt="default" class="start-your-store-default-img">
+      <img src="https://img.icons8.com/?size=100&id=118638&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
+      <h3>Tiktok Shop Automation</h3>
+      <p>Boost your TikTok sales with our automated product listing, order placement and fulfilment.</p>
+    </div>
+
+    <div class="start-your-store-card">
+      <img src="https://img.icons8.com/?size=100&id=ml9JHoWIMXxf&format=png&color=000000" alt="default" class="start-your-store-default-img">
+      <img src="https://img.icons8.com/?size=100&id=ml9JHoWIMXxf&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
+      <h3>eBay Automation</h3>
+      <p>Automate your eBay for product listing, pricing, fulfillment and customer support 24/7.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- Start your Store  -->
+
+<!-- Video Container -->
+ <div class="video-container">
+  <video src="https://www.amazonconsultant.ae/assets/frontend/images/sample/amazon-consultants.webm" autoplay loop muted></video>
+ </div>
+<!-- Video Container -->
+
+<!-- Services Container -->
+  <div class="start-your-store-text-container">
+  <h2>Comprehensive Services We Provide To Open Your Own Amazon Store In The Gulf</h2>
+  <p>As the best Amazon automation service, we offer end-to-end services to set up, launch and grow your business. Our services are enough for you to get started with e-commerce on any platform.</p>
+ </div>
+    <!-- Box Contaienr -->
+ <div id="services-main-container">
+  <div id="services-inner-container">
+    <!-- box -->
+    <div class="service-box">
+      <div class="service-box-upper-container">
+        <h3>Store Setup & Optimization</h3>
+        <img src="https://img.icons8.com/?size=100&id=78230&format=png&color=1A1A1A" alt="">
+      </div>
+      <div class="service-box-bottom-container">
+        <p>We assist in setting up and optimizing it for more visibility, a seamless process and remarkable reach.</p>
+        <a href="#">Get free quote</a>
+      </div>
+    </div>
+    <!-- end -->
+    <!-- box -->
+    <div class="service-box">
+      <div class="service-box-upper-container">
+        <h3>Product Research & Listing</h3>
+        <img src="https://img.icons8.com/?size=100&id=9wrhylvph2VN&format=png&color=1A1A1A" alt="">
+      </div>
+      <div class="service-box-bottom-container">
+        <p>Our team conduct thorough research to find winning products with chances of getting sold easily.</p>
+        <a href="#">Get free quote</a>
+      </div>
+    </div>
+    <!-- end -->
+    <!-- box -->
+    <div class="service-box">
+      <div class="service-box-upper-container">
+        <h3>Pricing & Inventory Management</h3>
+        <img src="https://img.icons8.com/?size=100&id=44375&format=png&color=1A1A1A" alt="">
+      </div>
+      <div class="service-box-bottom-container">
+        <p>Your Amazon seller account in UAE will earn your profit with our impressive platform management.</p>
+        <a href="#">Get free quote</a>
+      </div>
+    </div>
+    <!-- end -->
+    <!-- box -->
+    <div class="service-box">
+      <div class="service-box-upper-container">
+        <h3>Order Processing & Fulfillment</h3>
+        <img src="https://img.icons8.com/?size=100&id=QhZBmMxscDQh&format=png&color=1A1A1A" alt="">
+      </div>
+      <div class="service-box-bottom-container">
+        <p>From order placement to delivery, we guarantee smooth processing with automated stores.</p>
+        <a href="#">Get free quote</a>
+      </div>
+    </div>
+    <!-- end -->
+    <!-- box -->
+    <div class="service-box">
+      <div class="service-box-upper-container">
+        <h3>Customer Support Automation</h3>
+        <img src="https://img.icons8.com/?size=100&id=aKhBH2zWyueV&format=png&color=1A1A1A" alt="">
+      </div>
+      <div class="service-box-bottom-container">
+        <p>Our quick processing and instant responses are the reasons behind our high customer retention.</p>
+        <a href="#">Get free quote</a>
+      </div>
+    </div>
+    <!-- end -->
+    <!-- box -->
+    <div class="service-box">
+      <div class="service-box-upper-container">
+        <h3>Influencer & Affiliate Marketing</h3>
+        <img src="https://img.icons8.com/?size=100&id=58171&format=png&color=1A1A1A" alt="">
+      </div>
+      <div class="service-box-bottom-container">
+        <p>Make your store more credible with effective marketing techniques that are utilized strategically for success.</p>
+        <a href="#">Get free quote</a>
+      </div>
+    </div>
+    <!-- end -->
+    <!-- box -->
+    <div class="service-box">
+      <div class="service-box-upper-container">
+        <h3>Expert Growth Support</h3>
+        <img src="https://img.icons8.com/?size=100&id=6470&format=png&color=1A1A1A" alt="">
+      </div>
+      <div class="service-box-bottom-container">
+        <p>With impactful guidance from experts, we help you boost your revenue and expand your business.</p>
+        <a href="#">Get free quote</a>
+      </div>
+    </div>
+    <!-- end -->
+    <!-- box -->
+    <div class="service-box">
+      <div class="service-box-upper-container">
+        <h3>Performance Tracking & Reports</h3>
+        <img src="https://img.icons8.com/?size=100&id=42208&format=png&color=1A1A1A" alt="">
+      </div>
+      <div class="service-box-bottom-container">
+        <p>We monitor automated Amazon business in metrics like sales, conversions, and complete analytics.</p>
+        <a href="#">Get free quote</a>
+      </div>
+    </div>
+    <!-- end -->
+  </div>
+ </div>
+
+ <!-- To Drive Success Container -->
+  <section id="to-drive-success-section" class="to-drive-success-section">
+  <div class="to-drive-success-container">
+    <!-- Left Content -->
+    <div class="to-drive-success-content">
+      <h2 class="to-drive-success-heading">
+        A Complete Amazon FBA Automation Service That’s Enough 
+        <span class="to-drive-success-highlight">To Drive Success</span>, Including:
+      </h2>
+      <div class="to-drive-success-lists">
+        <ul class="to-drive-success-list">
+          <li>Store Setup</li>
+          <li>Product Selection</li>
+          <li>Listing Creation</li>
+          <li>Inventory Management</li>
+          <li>Order Fulfillment</li>
+          <li>Customer Support Automation</li>
+          <li>Advertising Campaigns</li>
+        </ul>
+        <ul class="to-drive-success-list">
+          <li>Influencer & Affiliate Marketing</li>
+          <li>Brand Registry & Protection</li>
+          <li>Enhanced Brand Content (EBC)</li>
+          <li>Performance Monitoring</li>
+          <li>Reputation Management</li>
+          <li>Store Scaling Strategies</li>
+          <li>24/7 Store Automation</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="to-drive-success-image">
+      <img src="https://www.amazonconsultant.ae/assets/frontend/images/sample/amazon-service-providers.webp" alt="Amazon Service" />
+    </div>
+  </div>
+</section>
+
+<!-- Automated Amazon -->
+ <section id="automated-amazon-section" class="automated-amazon-section">
+  <div class="automated-amazon-container">
+    <div class="automated-amazon-image-column">
+      <img src="https://www.amazonconsultant.ae/assets/frontend/images/sample/automated-amazon-store.webp" alt="Automated Amazon Store">
+    </div>
+    <div class="automated-amazon-content-column">
+      <h2 class="automated-amazon-heading">A Path That Leads To Automated Amazon Stores</h2>
+      <ul class="automated-amazon-list">
+        <li>Get started by simply connecting with our team and sharing all the necessary business details, including niche, positioning, goals, etc. We require such details to begin the store setup.</li>
+        <li>Our team will create your Amazon automated business store and handle everything from product listing and inventory to price management to ensure smooth order processing.</li>
+        <li>We regularly monitor and update the listing through our in-depth research and competitor analysis. Beating your rivals and sales growth is promised as you've partnered with the experts.</li>
+      </ul>
+      <div class="automated-amazon-buttons">
+        <a href="#" class="automated-amazon-button automated-amazon-build-store">Build My Amazon Store </a>
+        <a href="tel:+971542265592" class="automated-amazon-button automated-amazon-phone">+971 542 265 592</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Main Pricing Section -->
+    <div id="pricing-main-section" class="pricing-section">
+        <div class="pricing-cards-container">
+            <!-- Pricing Card 1: Amazon Launch -->
+            <div id="pricing-card-1" class="pricing-card">
+                <div class="pricing-card-header">
+                    <div class="pricing-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bullhorn">
+                            <path d="M18 10a6 6 0 1 0-12 0v5a2 2 0 0 1-2 2h-1a1 1 0 0 1-1-1v-2a2 2 0 0 1 2-2h1"></path>
+                            <path d="M12 18v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2"></path>
+                            <path d="M12 6a4 4 0 1 1 0 8a4 4 0 0 1 0-8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="pricing-card-title">Amazon Launch</h3>
+                    <p class="pricing-card-description">Maximize your store's potential with expert optimization and strategic marketing.</p>
+                </div>
+                <div class="pricing-price-container">
+                    <p class="pricing-price">AED 999</p>
+                    <p class="pricing-save">Save 40%!</p>
+                </div>
+                <ul class="pricing-features">
+                    <li><span class="pricing-check-icon">&#10003;</span> Complete Account Setup & Optimization</li>
+                    <li><span class="pricing-check-icon">&#10003;</span> Manage Product Listings (Up to 50 Items)</li>
+                    <li><span class="pricing-check-icon">&#10003;</span> Essential Marketing & Ad Support</li>
+                    <li><span class="pricing-check-icon">&#10003;</span> Monthly Performance Insights & Reports</li>
+                    <li><span class="pricing-check-icon">&#10003;</span> Dedicated Customer Service Management</li>
+                </ul>
+            </div>
+
+            <!-- Pricing Card 2: Amazon Growth (Most Popular) -->
+            <div id="pricing-card-2" class="pricing-card pricing-card-popular">
+                <div class="pricing-card-header">
+                    <div class="pricing-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rocket">
+                            <path d="M4.5 15.5l2.5-2.5 5.5 5.5-2.5 2.5a2.5 2.5 0 1 1-3.5-3.5z"></path>
+                            <path d="M13.5 10.5l-5.5 5.5"></path>
+                            <path d="M17.5 6.5l-5-5"></path>
+                            <path d="M22 13l-4-4"></path>
+                            <path d="M21 9l-4-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="pricing-card-title">Amazon Growth</h3>
+                    <p class="pricing-card-description">Boost your online presence with expert optimization and seamless support.</p>
+                </div>
+                <div class="pricing-price-container">
+                    <p class="pricing-price">AED 1999</p>
+                    <p class="pricing-save">Save 40%!</p>
+                </div>
+                <ul class="pricing-features">
+                    <li><span class="pricing-check-icon">&#10003;</span> Advanced Account Setup & Optimization</li>
+                    <li><span class="pricing-check-icon">&#10003;</span> Manage Up To 100 Product Listings</li>
+                    <li><span class="pricing-check-icon">&#10003;</span> Targeted Marketing & Ad Strategies</li>
+                    <li><span class="pricing-check-icon">&#10003;</span> Weekly Performance Insights</li>
+                    <li><span class="pricing-check-icon">&#10003;</span> Dedicated Account Manager</li>
+                    <li><span class="pricing-check-icon">&#10003;</span> Customer & Inventory Management</li>
+                    <li><span class="pricing-check-icon">&#10003;</span> Access To Premium Resources</li>
+                </ul>
+            </div>
+
+            <!-- Pricing Card 3: Complete Seller Solution -->
+            <div id="pricing-card-3" class="pricing-card">
+                <div class="pricing-card-header">
+                    <div class="pricing-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                            <line x1="1" y1="10" x2="23" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3 class="pricing-card-title">Complete Seller Solution</h3>
+                    <p class="pricing-card-description">Ultimate e-commerce solution with custom services & dedicated support for your business.</p>
+                </div>
+                <div class="pricing-price-container">
+                    <p class="pricing-price">AED 4999</p>
+                    <p class="pricing-save">Save 40%!</p>
+                </div>
+                <ul class="pricing-features">
+                    <li><span class="pricing-check-icon">&#10003;</span> Custom Account Setup & Full Optimization</li>
+                    <li><span class="pricing-check-icon">&#10003;</span> Unlimited Product Listings</li>
+                    <li><span class="pricing-check-icon">&#10003;</span> Personalized Marketing & Ad Campaigns</li>
+                    <li><span class="pricing-check-icon">&#10003;</span> Real-Time Performance Tracking</li>
+                    <li><span class="pricing-check-icon">&#10003;</span> Dedicated Account Management</li>
+                    <li><span class="pricing-check-icon">&#10003;</span> Advanced Inventory & Supply Chain Support</li>
+                    <li><span class="pricing-check-icon">&#10003;</span> Comprehensive Customer Service Solutions</li>
+                    <li><span class="pricing-check-icon">&#10003;</span> Exclusive Tools & Tailored Training</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Buttons Section -->
+        <div class="pricing-buttons-container">
+            <a href="#" class="pricing-button pricing-button-launch">Launch My Amazon Store</a>
+            <a href="tel:+971542265592" class="pricing-button pricing-button-phone">+971 542 265 592</a>
+        </div>
+    </div>
+
+</body>
+</html>
