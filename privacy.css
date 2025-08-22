@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.privacy-main-container{
+    height: fit-content;
+    width: 95%;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.privacy-main-container h1{
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+}
+.privacy-main-container p{
+    text-align: left;
+    width: 100%;
+    font-size: medium;
+}
+.privacy-main-container h2{
+    text-align: left;
+    width: 100%;
+    font-size: 30px;
+}
+@media (max-width: 600px) {
+
+.privacy-main-container h1{
+    font-size: 22px;
+}
+.privacy-main-container p{
+    font-size: small;
+}
+.privacy-main-container h2{
+    font-size: 18px;
+}
+}

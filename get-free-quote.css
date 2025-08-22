@@ -162,7 +162,41 @@
     border: none;
     cursor: pointer;
     transition: background 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
+.get-free-form-container form button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    background: #ffa717;
+    z-index: -1;
+    transition: bottom 0.4s ease-in-out;
+    border-radius: 5px;
+}
+
+.get-free-form-container form button:hover::after {
+    bottom: 0;
+}
+
+.get-free-form-container form button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.6) 50%,
+            transparent 100%);
+    transform: skewX(-25deg);
+    animation: shine 3s infinite;
+}
+
 
 .get-free-form-container form button:hover {
     background-color: #e69510;

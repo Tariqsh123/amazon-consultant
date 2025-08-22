@@ -25,27 +25,34 @@
         </div>
     </div>
     <!-- Above-Navbar -->
-    <!-- Navbar -->
-     <nav class="navbar">
+    <nav class="navbar">
   <div id="nav-inner">
-    <a href="index.html"> <img src="images/Logo.svg" class="logo" alt=""></a>
+        <a href="index.html"> <img src="images/Logo.svg" class="logo" alt=""></a>
+
     <ul class="nav-links">
       <li><a href="about-us.html">About Us</a></li>
       <li class="dropdown">
         <a href="#">Services <span>▾</span></a>
         <ul class="dropdown-content">
          <li><a href="#">Amazon Book Publishing</a></li>
-      <li><a href="#">Tiktok Shop Automation</a></li>
-      <li><a href="#">Walmart Automation</a></li>
-      <li><a href="#">Shopify Automation</a></li>
-      <li><a href="#">ebay Automation</a></li>
-      <li><a href="#">Noon Store</a></li>
+         <li><a href="#">Book Writing</a></li>
+         <li><a href="#">Book Reading</a></li>
+         <li><a href="#">Proof Writing</a></li>
+         <li><a href="#">Book Cover Design</a></li>
+         <li><a href="#">Book MArketing</a></li>
+         <li><a href="#">Ghost Writing</a></li>
+         <li><a href="#">Script Writing</a></li>
+         <li><a href="#">Audio Book</a></li>
+         <li><a href="#">Author Wensite</a></li>
+         <li><a href="#">Children Book Illustration</a></li>
+         <li><a href="#">Custom Illustration</a></li>
+         <li><a href="#">Children Book Writing</a></li>
         </ul>
       </li>
       <li><a href="contact-us.html">Contact Us</a></li>
     </ul>
     <a href="get-free-quote.html" style="text-decoration: none;"> <button class="launch-btn">Get Free Quote</button></a>
-
+    
     <div class="hamburger" onclick="toggleMenu()">
       <span></span>
       <span></span>
@@ -63,15 +70,22 @@
     </li>
     <ul class="side-dropdown">
       <li><a href="#">Amazon Book Publishing</a></li>
-      <li><a href="#">Tiktok Shop Automation</a></li>
-      <li><a href="#">Walmart Automation</a></li>
-      <li><a href="#">Shopify Automation</a></li>
-      <li><a href="#">ebay Automation</a></li>
-      <li><a href="#">Noon Store</a></li>
+         <li><a href="#">Book Writing</a></li>
+         <li><a href="#">Book Reading</a></li>
+         <li><a href="#">Proof Writing</a></li>
+         <li><a href="#">Book Cover Design</a></li>
+         <li><a href="#">Book MArketing</a></li>
+         <li><a href="#">Ghost Writing</a></li>
+         <li><a href="#">Script Writing</a></li>
+         <li><a href="#">Audio Book</a></li>
+         <li><a href="#">Author Wensite</a></li>
+         <li><a href="#">Children Book Illustration</a></li>
+         <li><a href="#">Custom Illustration</a></li>
+         <li><a href="#">Children Book Writing</a></li>
     </ul>
     <li><a href="contact-us.html">Contact Us</a></li>
   </ul>
-  <a href="get-free-quote.css" style="text-decoration: none;"><button class="launch-btn" id="sidemenu-launch-btn">Get Free Quote</button></a>
+  <a href="get-free-quote.html" style="text-decoration: none;"> <button class="launch-btn" id="sidemenu-launch-btn">Get Free Quote</button></a>
 </div>
 <script>
   function toggleMenu() {
@@ -84,6 +98,10 @@
   }
 </script>
     <!-- Navbar -->
+
+
+
+    
      <!-- Header -->
       <header>
         <div class="header-left">
@@ -98,7 +116,7 @@
                 <div class="header-left-review-img-container">
                     <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/saeed-al-mansoori.webp" alt="">
                     <p>Saeed Al Mansoori --- Founder & CEO of EmirateX Solutions</p>
-                </div>
+                                  </div>
                 <div class="header-left-review-footer-conainer">
                     <p>4.9/5.0 </p>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/5_stars.svg/2560px-5_stars.svg.png" alt="">
@@ -177,11 +195,66 @@
 
 <!-- Start your Store  -->
 
-<!-- Video Container -->
- <div class="video-container">
-  <video src="https://www.amazonconsultant.ae/assets/frontend/images/sample/amazon-consultants.webm" autoplay loop muted></video>
- </div>
-<!-- Video Container -->
+<!-- Book CArousel  -->
+
+<div id="book-carousel-heading-container">
+  <h2>Your Book Deserves a Global Audience</h2>
+</div>
+
+<div id="book-carousel-main-container">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/banner-1.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/banner-2.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/banner-3.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/banner-4.png" alt=""></div>
+    </div>
+  </div>
+</div>
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<style>
+ 
+</style>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 3,
+    spaceBetween: 15,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    grabCursor: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      601: {
+        slidesPerView: 3,
+      }
+    },
+    on: {
+      init: function () {
+        this.update();
+      }
+    }
+  });
+  swiper.on('slideChangeTransitionEnd', () => {
+    document.querySelectorAll('.swiper-slide').forEach(slide => slide.style.zIndex = 1);
+    const active = document.querySelector('.swiper-slide-active');
+    if (active) active.style.zIndex = 99;
+  });
+</script>
+
+
+
+<!-- Book CArousel  -->
 
 <!-- Services Container -->
   <div class="start-your-store-text-container">
@@ -192,100 +265,188 @@
  <div id="services-main-container">
   <div id="services-inner-container">
     <!-- box -->
-    <div class="service-box">
-      <div class="service-box-upper-container">
-        <h3>Store Setup & Optimization</h3>
-        <img src="https://img.icons8.com/?size=100&id=78230&format=png&color=1A1A1A" alt="">
-      </div>
-      <div class="service-box-bottom-container">
-        <p>We assist in setting up and optimizing it for more visibility, a seamless process and remarkable reach.</p>
-        <a href="get-free-quote.html">Get free quote</a>
-      </div>
+  <div class="service-box">
+  <div class="service-box-upper-container">
+    <h3>Amazon Book Publishing</h3>
+    <img src="https://img.icons8.com/?size=100&id=36099&format=png&color=000000" alt="">
+  </div>
+  <div class="service-box-bottom-container">
+    <p>We publish your book on Amazon with complete setup and visibility.</p>
+    <div class="service-box-btn-container">
+      <a href="#" class="btn-learn">Learn More</a>
+      <a href="get-free-quote.html" class="btn-publish">Start Publishing</a>
     </div>
-    <!-- end -->
-    <!-- box -->
-    <div class="service-box">
-      <div class="service-box-upper-container">
-        <h3>Product Research & Listing</h3>
-        <img src="https://img.icons8.com/?size=100&id=9wrhylvph2VN&format=png&color=1A1A1A" alt="">
-      </div>
-      <div class="service-box-bottom-container">
-        <p>Our team conduct thorough research to find winning products with chances of getting sold easily.</p>
-        <a href="get-free-quote.html">Get free quote</a>
-      </div>
+  </div>
+</div>
+
+<div class="service-box">
+  <div class="service-box-upper-container">
+    <h3>Book Writing</h3>
+    <img src="https://img.icons8.com/?size=100&id=gbE7AiuxmrBq&format=png&color=000000" alt="">
+  </div>
+  <div class="service-box-bottom-container">
+    <p>Professional writing service to bring your book idea to life.</p>
+    <div class="service-box-btn-container">
+      <a href="#" class="btn-learn">Learn More</a>
+      <a href="get-free-quote.html" class="btn-publish">Start Publishing</a>
     </div>
-    <!-- end -->
-    <!-- box -->
-    <div class="service-box">
-      <div class="service-box-upper-container">
-        <h3>Pricing & Inventory Management</h3>
-        <img src="https://img.icons8.com/?size=100&id=44375&format=png&color=1A1A1A" alt="">
-      </div>
-      <div class="service-box-bottom-container">
-        <p>Your Amazon seller account in UAE will earn your profit with our impressive platform management.</p>
-        <a href="get-free-quote.html">Get free quote</a>
-      </div>
+  </div>
+</div>
+
+<div class="service-box">
+  <div class="service-box-upper-container">
+    <h3>Book Editing</h3>
+    <img src="https://img.icons8.com/?size=100&id=23183&format=png&color=000000" alt="">
+  </div>
+  <div class="service-box-bottom-container">
+    <p>Enhance your manuscript with expert editing for clarity and flow.</p>
+    <div class="service-box-btn-container">
+      <a href="#" class="btn-learn">Learn More</a>
+      <a href="get-free-quote.html" class="btn-publish">Start Publishing</a>
     </div>
-    <!-- end -->
-    <!-- box -->
-    <div class="service-box">
-      <div class="service-box-upper-container">
-        <h3>Order Processing & Fulfillment</h3>
-        <img src="https://img.icons8.com/?size=100&id=QhZBmMxscDQh&format=png&color=1A1A1A" alt="">
-      </div>
-      <div class="service-box-bottom-container">
-        <p>From order placement to delivery, we guarantee smooth processing with automated stores.</p>
-        <a href="get-free-quote.html">Get free quote</a>
-      </div>
+  </div>
+</div>
+
+<div class="service-box">
+  <div class="service-box-upper-container">
+    <h3>Proof Reading</h3>
+    <img src="https://img.icons8.com/?size=100&id=7719&format=png&color=000000" alt="">
+  </div>
+  <div class="service-box-bottom-container">
+    <p>We ensure error-free writing with professional proofreading service.</p>
+    <div class="service-box-btn-container">
+      <a href="#" class="btn-learn">Learn More</a>
+      <a href="get-free-quote.html" class="btn-publish">Start Publishing</a>
     </div>
-    <!-- end -->
-    <!-- box -->
-    <div class="service-box">
-      <div class="service-box-upper-container">
-        <h3>Customer Support Automation</h3>
-        <img src="https://img.icons8.com/?size=100&id=aKhBH2zWyueV&format=png&color=1A1A1A" alt="">
-      </div>
-      <div class="service-box-bottom-container">
-        <p>Our quick processing and instant responses are the reasons behind our high customer retention.</p>
-        <a href="get-free-quote.html">Get free quote</a>
-      </div>
+  </div>
+</div>
+
+<div class="service-box">
+  <div class="service-box-upper-container">
+    <h3>Book Cover Design</h3>
+    <img src="https://img.icons8.com/?size=100&id=ajkz1dk1AfEe&format=png&color=000000" alt="">
+  </div>
+  <div class="service-box-bottom-container">
+    <p>Eye-catching book covers designed to attract readers instantly.</p>
+    <div class="service-box-btn-container">
+      <a href="#" class="btn-learn">Learn More</a>
+      <a href="get-free-quote.html" class="btn-publish">Start Publishing</a>
     </div>
-    <!-- end -->
-    <!-- box -->
-    <div class="service-box">
-      <div class="service-box-upper-container">
-        <h3>Influencer & Affiliate Marketing</h3>
-        <img src="https://img.icons8.com/?size=100&id=58171&format=png&color=1A1A1A" alt="">
-      </div>
-      <div class="service-box-bottom-container">
-        <p>Make your store more credible with effective marketing techniques that are utilized strategically for success.</p>
-        <a href="get-free-quote.html">Get free quote</a>
-      </div>
+  </div>
+</div>
+
+<div class="service-box">
+  <div class="service-box-upper-container">
+    <h3>Book Marketing</h3>
+    <img src="https://img.icons8.com/?size=100&id=o9r8HjgL7f74&format=png&color=000000" alt="">
+  </div>
+  <div class="service-box-bottom-container">
+    <p>Reach a wider audience with proven book marketing strategies.</p>
+    <div class="service-box-btn-container">
+      <a href="#" class="btn-learn">Learn More</a>
+      <a href="get-free-quote.html" class="btn-publish">Start Publishing</a>
     </div>
-    <!-- end -->
-    <!-- box -->
-    <div class="service-box">
-      <div class="service-box-upper-container">
-        <h3>Expert Growth Support</h3>
-        <img src="https://img.icons8.com/?size=100&id=6470&format=png&color=1A1A1A" alt="">
-      </div>
-      <div class="service-box-bottom-container">
-        <p>With impactful guidance from experts, we help you boost your revenue and expand your business.</p>
-        <a href="get-free-quote.html">Get free quote</a>
-      </div>
+  </div>
+</div>
+
+<div class="service-box">
+  <div class="service-box-upper-container">
+    <h3>Ghost Writing</h3>
+    <img src="https://img.icons8.com/?size=100&id=60787&format=png&color=1A1A1A" alt="">
+  </div>
+  <div class="service-box-bottom-container">
+    <p>We write books for you while you keep 100% ownership and credit.</p>
+    <div class="service-box-btn-container">
+      <a href="#" class="btn-learn">Learn More</a>
+      <a href="get-free-quote.html" class="btn-publish">Start Publishing</a>
     </div>
-    <!-- end -->
-    <!-- box -->
-    <div class="service-box">
-      <div class="service-box-upper-container">
-        <h3>Performance Tracking & Reports</h3>
-        <img src="https://img.icons8.com/?size=100&id=42208&format=png&color=1A1A1A" alt="">
-      </div>
-      <div class="service-box-bottom-container">
-        <p>We monitor automated Amazon business in metrics like sales, conversions, and complete analytics.</p>
-        <a href="get-free-quote.html">Get free quote</a>
-      </div>
+  </div>
+</div>
+
+<div class="service-box">
+  <div class="service-box-upper-container">
+    <h3>Script Writing</h3>
+    <img src="https://img.icons8.com/?size=100&id=SOSsf64BLnDT&format=png&color=1A1A1A" alt="">
+  </div>
+  <div class="service-box-bottom-container">
+    <p>Creative and engaging scripts tailored for books or media projects.</p>
+    <div class="service-box-btn-container">
+      <a href="#" class="btn-learn">Learn More</a>
+      <a href="get-free-quote.html" class="btn-publish">Start Publishing</a>
     </div>
+  </div>
+</div>
+
+<div class="service-box">
+  <div class="service-box-upper-container">
+    <h3>Audio Book</h3>
+    <img src="https://img.icons8.com/?size=100&id=20439&format=png&color=1A1A1A" alt="">
+  </div>
+  <div class="service-box-bottom-container">
+    <p>Turn your book into a professional-quality audio version.</p>
+    <div class="service-box-btn-container">
+      <a href="#" class="btn-learn">Learn More</a>
+      <a href="get-free-quote.html" class="btn-publish">Start Publishing</a>
+    </div>
+  </div>
+</div>
+
+<div class="service-box">
+  <div class="service-box-upper-container">
+    <h3>Author Website</h3>
+    <img src="https://img.icons8.com/?size=100&id=105296&format=png&color=1A1A1A" alt="">
+  </div>
+  <div class="service-box-bottom-container">
+    <p>Build a professional author website to showcase your work.</p>
+    <div class="service-box-btn-container">
+      <a href="#" class="btn-learn">Learn More</a>
+      <a href="get-free-quote.html" class="btn-publish">Start Publishing</a>
+    </div>
+  </div>
+</div>
+
+<div class="service-box">
+  <div class="service-box-upper-container">
+    <h3>Children Book Illustrations</h3>
+    <img src="https://img.icons8.com/?size=100&id=IJ7yETPMYNTy&format=png&color=1A1A1A" alt="">
+  </div>
+  <div class="service-box-bottom-container">
+    <p>Beautiful illustrations that bring children's stories to life.</p>
+    <div class="service-box-btn-container">
+      <a href="#" class="btn-learn">Learn More</a>
+      <a href="get-free-quote.html" class="btn-publish">Start Publishing</a>
+    </div>
+  </div>
+</div>
+
+<div class="service-box">
+  <div class="service-box-upper-container">
+    <h3>Custom Illustrations</h3>
+    <img src="https://img.icons8.com/?size=100&id=yfp6wHiMam5z&format=png&color=1A1A1A" alt="">
+  </div>
+  <div class="service-box-bottom-container">
+    <p>Tailored illustrations created to perfectly match your book vision.</p>
+    <div class="service-box-btn-container">
+      <a href="#" class="btn-learn">Learn More</a>
+      <a href="get-free-quote.html" class="btn-publish">Start Publishing</a>
+    </div>
+  </div>
+</div>
+
+<div class="service-box">
+  <div class="service-box-upper-container">
+    <h3>Children Book Writing</h3>
+    <img src="https://img.icons8.com/?size=100&id=bbKHo0d_8kar&format=png&color=1A1A1A" alt="">
+  </div>
+  <div class="service-box-bottom-container">
+    <p>Expertly written stories designed for children’s imagination.</p>
+    <div class="service-box-btn-container">
+      <a href="#" class="btn-learn">Learn More</a>
+      <a href="get-free-quote.html" class="btn-publish">Start Publishing</a>
+    </div>
+  </div>
+</div>
+
     <!-- end -->
   </div>
  </div>
@@ -350,9 +511,8 @@
 </section>
 
  <!-- Main Pricing Section -->
-    <div id="pricing-main-section" class="pricing-section">
+    <!-- <div id="pricing-main-section" class="pricing-section">
         <div class="pricing-cards-container">
-            <!-- Pricing Card 1: Amazon Launch -->
             <div id="pricing-card-1" class="pricing-card">
                 <div class="pricing-card-header">
                     <div class="pricing-card-icon">
@@ -378,7 +538,6 @@
                 </ul>
             </div>
 
-            <!-- Pricing Card 2: Amazon Growth (Most Popular) -->
             <div id="pricing-card-2" class="pricing-card pricing-card-popular">
                 <div class="pricing-card-header">
                     <div class="pricing-card-icon">
@@ -407,8 +566,6 @@
                     <li><span class="pricing-check-icon">&#10003;</span> Access To Premium Resources</li>
                 </ul>
             </div>
-
-            <!-- Pricing Card 3: Complete Seller Solution -->
             <div id="pricing-card-3" class="pricing-card">
                 <div class="pricing-card-header">
                     <div class="pricing-card-icon">
@@ -436,13 +593,11 @@
                 </ul>
             </div>
         </div>
-
-        <!-- Buttons Section -->
         <div class="pricing-buttons-container">
             <a href="#" class="pricing-button pricing-button-launch">Launch My Amazon Store</a>
             <a href="tel:+971542265592" class="pricing-button pricing-button-phone">+971 542 265 592</a>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- Testimonial -->
@@ -889,6 +1044,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li><a href="about-us.html">About us</a></li>
                     <li><a href="contact-us.html">Contact us</a></li>
                     <li><a href="get-free-quote.html">Ger Free Quote</a></li>
+                    <li><a href="terms.html">Terms & Condition</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
                 </ul>
             </div>
             <!-- Column 3 -->
@@ -896,11 +1053,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h4>Services</h4>
                 <ul>
                     <li><a href="#">Amazon Book Publishing</a></li>
-                    <li><a href="#">Tiktok Shop Automation</a></li>
-                    <li><a href="#">Walmart Automation</a></li>
-                    <li><a href="#">Shopify Automation</a></li>
-                    <li><a href="#">eBay Automation</a></li>
-                    <li><a href="#">Noon Store</a></li>
+                    <li><a href="#">Book Writing</a></li>
+                    <li><a href="#">Book Reading</a></li>
+                    <li><a href="#">Proof Reading</a></li>
+                    <li><a href="#">Book Cover Design</a></li>
+                    <li><a href="#">Book Marketing</a></li>
+                    <li><a href="#">Ghost Writing</a></li>
+                    <li><a href="#">Script Writing</a></li>
+                    <li><a href="#">Audio Book</a></li>
+                    <li><a href="#">Author Website</a></li>
+                    <li><a href="#">Children Book Illustration</a></li>
+                    <li><a href="#">Custom Illustration</a></li>
+                    <li><a href="#">Children Book Writing</a></li>
                 </ul>
             </div>
             <!-- Column 4 -->
