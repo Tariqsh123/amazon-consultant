@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Page Creation</title>
+    <link rel="stylesheet" href="about-us.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="service-template.css">
+</head>
+<body>
+    <!-- Above-Navbar -->
+    <div id="above-nav-maon-container">
+        <div id="above-nav-left">
+            <p>#1 Ecommerce Automation Consultants in the UAE and Across the Gulf</p>
+        </div>
+        <div id="above-nav-right">
+            <div id="above-nav-right-box">
+                <img src="https://img.icons8.com/?size=100&id=9730&format=png&color=000000" alt="">
+                <a href="#">+971 542 265 592</a>
+            </div>
+            <div id="above-nav-right-box">
+                <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000" alt="">
+                <a href="#">info@amazonconsultant.ae</a>
+            </div>
+        </div>
+    </div>
+    <!-- Above-Navbar -->
+    <nav class="navbar">
+  <div id="nav-inner">
+        <a href="index.html"> <img src="images/Logo.svg" class="logo" alt=""></a>
+
+    <ul class="nav-links">
+      <li><a href="about-us.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="#">Services <span>▾</span></a>
+        <ul class="dropdown-content">
+         <li><a href="#">Amazon Book Publishing</a></li>
+         <li><a href="#">Book Writing</a></li>
+         <li><a href="#">Proofreading</a></li>
+         <li><a href="#">Book Cover Design</a></li>
+         <li><a href="#">Ghost Writing</a></li>
+         <li><a href="#">Script Writing</a></li>
+         <li><a href="#">Audio Book Publishing</a></li>
+         <li><a href="#">Children Book Illustration</a></li>
+         <li><a href="#">Custom Illustration</a></li>
+         <li><a href="#">Children Book Writing</a></li>
+         <li><a href="#">Story Writer</a></li>
+         <li><a href="#">Book Binding</a></li>
+         <li><a href="#">Ebooks Conversation</a></li>
+         <li><a href="#">Magazine Writing</a></li>
+         <li><a href="#">Novel Writer Publisher</a></li>
+         <li><a href="#">Manuscript Assessment</a></li>
+         <li><a href="#">Bookmark Printing</a></li>
+         <li><a href="#">Thesis Printing Binding</a></li>
+         <li><a href="#">Book Layout Design</a></li>
+         <li><a href="#">Rhymes Writing</a></li>
+         <li><a href="#">Biography Writing</a></li>
+         <li><a href="#">Wikipedia Page Creation</a></li>
+         <li><a href="#">Book Editing</a></li>
+         <li><a href="#">Book Publishing</a></li>
+         <li><a href="#">Book Printing</a></li>
+         <li><a href="#">Children Book Publishing</a></li>
+         <li><a href="#">eBook Publishing</a></li>
+         <li><a href="#">Novel Book Publishing</a></li>
+         <li><a href="#">Poetry & Poem Publishing</a></li>
+         <li><a href="#">Manuscript Writing Publishing</a></li>
+         <li><a href="#">Wikipedia Page Monitoring</a></li>
+         <li><a href="#">Wikipedia Page Translation</a></li>
+         <li><a href="#">Art Book Publishing</a></li>
+         <li><a href="#">Autobiography Writing</a></li>
+         <li><a href="#">Memoir Writing</a></li>
+         <li><a href="#">Business Book</a></li>
+        </ul>
+      </li>
+      <li><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+    <a href="get-free-quote.html" style="text-decoration: none;"> <button class="launch-btn">Get Free Quote</button></a>
+    
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+<div class="side-menu" id="sideMenu">
+  <span class="close-btn" onclick="toggleMenu()">&times;</span>
+  <img src="images/Logo.svg" class="logo" alt="">
+  <ul>
+    <li><a href="about-us.html">About Us</a></li>
+    <li class="dropdown-toggle" onclick="toggleSideDropdown(this)">
+      Services <span>▾</span>
+    </li>
+    <ul class="side-dropdown">
+      <li><a href="#">Amazon Book Publishing</a></li>
+         <li><a href="#">Book Writing</a></li>
+         <li><a href="#">Proofreading</a></li>
+         <li><a href="#">Book Cover Design</a></li>
+         <li><a href="#">Ghost Writing</a></li>
+         <li><a href="#">Script Writing</a></li>
+         <li><a href="#">Audio Book Publishing</a></li>
+         <li><a href="#">Children Book Illustration</a></li>
+         <li><a href="#">Custom Illustration</a></li>
+         <li><a href="#">Children Book Writing</a></li>
+         <li><a href="#">Story Writer</a></li>
+         <li><a href="#">Book Binding</a></li>
+         <li><a href="#">Ebooks Conversation</a></li>
+         <li><a href="#">Magazine Writing</a></li>
+         <li><a href="#">Novel Writer Publisher</a></li>
+         <li><a href="#">Manuscript Assessment</a></li>
+         <li><a href="#">Bookmark Printing</a></li>
+         <li><a href="#">Thesis Printing Binding</a></li>
+         <li><a href="#">Book Layout Design</a></li>
+         <li><a href="#">Rhymes Writing</a></li>
+         <li><a href="#">Biography Writing</a></li>
+         <li><a href="#">Wikipedia Page Creation</a></li>
+         <li><a href="#">Book Editing</a></li>
+         <li><a href="#">Book Publishing</a></li>
+         <li><a href="#">Book Printing</a></li>
+         <li><a href="#">Children Book Publishing</a></li>
+         <li><a href="#">eBook Publishing</a></li>
+         <li><a href="#">Novel Book Publishing</a></li>
+         <li><a href="#">Poetry & Poem Publishing</a></li>
+         <li><a href="#">Manuscript Writing Publishing</a></li>
+         <li><a href="#">Wikipedia Page Monitoring</a></li>
+         <li><a href="#">Wikipedia Page Translation</a></li>
+         <li><a href="#">Art Book Publishing</a></li>
+         <li><a href="#">Autobiography Writing</a></li>
+         <li><a href="#">Memoir Writing</a></li>
+         <li><a href="#">Business Book</a></li>
+    </ul>
+    <li><a href="contact-us.html">Contact Us</a></li>
+  </ul>
+  <a href="get-free-quote.html" style="text-decoration: none;"> <button class="launch-btn" id="sidemenu-launch-btn">Get Free Quote</button></a>
+</div>
+<script>
+  function toggleMenu() {
+    document.getElementById("sideMenu").classList.toggle("active");
+  }
+
+  function toggleSideDropdown(el) {
+    el.classList.toggle("active");
+    el.nextElementSibling.classList.toggle("active");
+  }
+</script>
+    <!-- Navbar -->
+
+
+
+
+
+
+
+
+<!-- Contact Us Work -->
+<div class="service-header">
+    <div class="service-header-inner">
+        <div class="service-header-left">
+           <h1>Professional Wikipedia Page Creation Service</h1>
+           <p>Want to establish a credible online presence? Our Wikipedia page creation service crafts accurate, well-structured, and fully compliant Wikipedia articles, highlighting your achievements, career, and notable contributions in a professional and verifiable way.</p>
+            <div class="header-left-btn-container">
+                <button class="header-left-primary-btn">
+                    Create My Wikipedia Page
+                    <img src="https://img.icons8.com/?size=100&id=12628&format=png&color=000000" alt="Wikipedia Page Creation Service">
+                </button>
+                <button class="header-left-secondary-btn">
+                    <img src="https://img.icons8.com/?size=100&id=9730&format=png&color=FFFFFF" alt="Call Us"> 
+                    +92 123 456 789
+                </button>
+            </div>
+        </div>
+        <div class="service-header-right">
+            <img src="https://www.amazonconsultant.ae/assets/frontend/images/sample/walmart-store-in-uae.webp" alt="Professional Wikipedia Page Creation Service">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+   <!-- Logo Container -->
+        <div id="header-logo-wrapper" >
+  <div id="header-logo-container">
+    <img src="images/amazon-kindle.webp" alt="amazon-kindle">
+    <img src="images/Barnes&Noble.png" alt="Barnes&Noble">
+    <img src="images/Rakuten_Kobo_logo.png" alt="Rakuten_Kobo_logo">
+    <img src="images/IngramSpark.jpg" alt="IngramSpark">
+    <img src="images/Google Books.png" alt="Google Books">
+    <img src="images/Lulu logo.png" alt="Lulu logo">
+
+    <!-- duplicate logos for seamless looping -->
+    <img src="images/amazon-kindle.webp" alt="amazon-kindle">
+    <img src="images/Barnes&Noble.png" alt="Barnes&Noble">
+    <img src="images/Rakuten_Kobo_logo.png" alt="Rakuten_Kobo_logo">
+    <img src="images/IngramSpark.jpg" alt="IngramSpark">
+    <img src="images/Google Books.png" alt="Google Books">
+    <img src="images/Lulu logo.png" alt="Lulu logo">
+  </div>
+</div>
+<div class="about-solution-heading-container">
+    <h2>Your One-Stop Solution for Professional Wikipedia Page Creation</h2>
+</div>
+
+<div class="about-solution-card-main-container">
+    <div class="about-solution-card-row-container">
+        <!-- 1 -->
+        <div class="about-solutiion-card-container">
+            <div class="about-solution-img-container">
+                <img src="https://img.icons8.com/?size=100&id=78230&format=png&color=ffa717" alt="">
+            </div>
+            <div class="about-solution-text-container">
+                <h3>Personal Consultation & Research</h3>
+                <p>We discuss your profile, achievements, and notable contributions. Our team conducts research to ensure your Wikipedia page is accurate, verifiable, and adheres to Wikipedia’s guidelines.</p>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="about-solutiion-card-container">
+            <div class="about-solution-img-container">
+                <img src="https://img.icons8.com/?size=100&id=23183&format=png&color=ffa717" alt="">
+            </div>
+            <div class="about-solution-text-container">
+                <h3>Content Structuring & Compliance</h3>
+                <p>We organize information into a clear, encyclopedic structure, ensuring neutrality, verifiability, and compliance with Wikipedia standards for quality and credibility.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-solution-card-row-container">
+        <!-- 3 -->
+        <div class="about-solutiion-card-container">
+            <div class="about-solution-img-container">
+                <img src="https://img.icons8.com/?size=100&id=36195&format=png&color=ffa717" alt="">
+            </div>
+            <div class="about-solution-text-container">
+                <h3>Highlighting Notable Achievements</h3>
+                <p>We emphasize your verified accomplishments, awards, and career milestones, presenting them in a neutral and professional tone suitable for Wikipedia.</p>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="about-solutiion-card-container">
+            <div class="about-solution-img-container">
+                <img src="https://img.icons8.com/?size=100&id=iV2d2QjFyUYL&format=png&color=ffa717" alt="">
+            </div>
+            <div class="about-solution-text-container">
+                <h3>Draft Review & Submission Guidance</h3>
+                <p>We provide a finalized Wikipedia-ready draft and guide you through the submission process, helping ensure approval and compliance with Wikipedia’s publishing standards.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Automated Amazon -->
+<section id="wikipedia-creation-section" class="automated-amazon-section">
+  <div class="automated-amazon-container">
+    <div class="automated-amazon-image-column">
+      <img src="https://www.amazonconsultant.ae/assets/frontend/images/sample/automated-amazon-store.webp" alt="Professional Wikipedia Page Creation">
+    </div>
+    <div class="automated-amazon-content-column">
+      <h2 class="automated-amazon-heading">A Path That Leads to Professional Wikipedia Page Creation</h2>
+      <ul class="automated-amazon-list">
+        <li>Share your profile, achievements, and notable contributions. We create a structured plan to craft a neutral, verifiable, and Wikipedia-compliant page.</li>
+        <li>Our writing team ensures clear organization, encyclopedic tone, and professional presentation of your notable milestones and accomplishments.</li>
+        <li>Receive guidance on citing sources, refining content, and preparing the final draft for Wikipedia submission and approval.</li>
+      </ul>
+      <div class="automated-amazon-buttons">
+        <a href="get-free-quote.html" class="automated-amazon-button automated-amazon-build-store">Create My Wikipedia Page</a>
+        <a href="tel:+971542265592" class="automated-amazon-button automated-amazon-phone">+971 542 265 592</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Start your Publishing -->
+<div class="start-your-store-text-container">
+  <h2>Professional Wikipedia Page Creation — Present Your Profile Authentically</h2>
+  <p>From personal achievements to professional milestones, we provide expert Wikipedia page creation services. Choose the option that best fits your online representation needs. Here are a few services we offer:</p>
+</div>
+<!-- boxes -->
+
+<div class="start-your-store-wrap">
+  <div class="start-your-store-grid">
+
+    <div class="start-your-store-card">
+      <img src="https://img.icons8.com/?size=100&id=36099&format=png&color=000000" alt="default" class="start-your-store-default-img">
+      <img src="https://img.icons8.com/?size=100&id=36099&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
+      <h3>Profile Structuring</h3>
+      <p>We organize your notable achievements, career milestones, and public contributions into a coherent Wikipedia-ready structure that meets editorial standards.</p>
+    </div>
+
+    <div class="start-your-store-card">
+      <img src="https://img.icons8.com/?size=100&id=9AKXsmexhjxe&format=png&color=1A1A1A" alt="default" class="start-your-store-default-img">
+      <img src="https://img.icons8.com/?size=100&id=9AKXsmexhjxe&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
+      <h3>Neutral Tone & Citations</h3>
+      <p>We craft content in a neutral, encyclopedic tone and incorporate verifiable sources, ensuring your Wikipedia page complies with Wikipedia’s guidelines.</p>
+    </div>
+
+    <div class="start-your-store-card">
+      <img src="https://img.icons8.com/?size=100&id=JBsPscMO0aat&format=png&color=000000" alt="default" class="start-your-store-default-img">
+      <img src="https://img.icons8.com/?size=100&id=JBsPscMO0aat&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
+      <h3>Editing & Proofreading</h3>
+      <p>We review your Wikipedia content for clarity, accuracy, and compliance, refining wording and references to ensure your profile is polished and reliable.</p>
+    </div>
+
+    <div class="start-your-store-card">
+      <img src="https://img.icons8.com/?size=100&id=GytajYfHdKAo&format=png&color=1A1A1A" alt="default" class="start-your-store-default-img">
+      <img src="https://img.icons8.com/?size=100&id=GytajYfHdKAo&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
+      <h3>Submission & Publishing Guidance</h3>
+      <p>We guide you through Wikipedia’s submission process, ensuring your page is properly formatted, approved, and professionally presented to the public.</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Testimonial -->
+     <section id="review-heading-section">
+<div class="review-heading-container">
+    <h2 class="review-heading-h2">
+        <span class="review-heading-span">15K+ Individuals & Professionals</span> Built and Published Their Wikipedia Profiles with Our Expert Page Creation Services
+    </h2>
+    <p class="review-heading-p">
+        Helping individuals, authors, and professionals create accurate, well-structured, and verifiable Wikipedia pages that highlight achievements, career milestones, and public contributions while adhering to Wikipedia’s guidelines.
+    </p>
+</div>
+
+
+
+
+
+</section>
+
+<div class="carousel-container">
+  <div class="carousel-track">
+    <!-- 1 -->
+    <div class="review-card">
+      <p class="review-text">
+        Publishing with Spines was one of the best decisions I’ve made as an author. The process was straightforward, the team was patient, and my book came out even better than I imagined.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Emily Carter</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="review-card">
+      <p class="review-text">
+        What I loved most was how Spines made everything stress-free. From editing to design, they handled it all. I finally felt like my story was in the hands of true professionals.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author James Rodriguez</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="review-card">
+      <p class="review-text">
+        I never thought publishing could be this easy. The team at Spines guided me at every step and gave my book a professional finish that I am truly proud of.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Sophia Mitchell</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+     <!-- 1 -->
+    <div class="review-card">
+      <p class="review-text">
+        Publishing with Spines was one of the best decisions I’ve made as an author. The process was straightforward, the team was patient, and my book came out even better than I imagined.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Emily Carter</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="review-card">
+      <p class="review-text">
+        What I loved most was how Spines made everything stress-free. From editing to design, they handled it all. I finally felt like my story was in the hands of true professionals.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author James Rodriguez</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="review-card">
+      <p class="review-text">
+        I never thought publishing could be this easy. The team at Spines guided me at every step and gave my book a professional finish that I am truly proud of.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Sophia Mitchell</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+     <!-- 1 -->
+    <div class="review-card">
+      <p class="review-text">
+        Publishing with Spines was one of the best decisions I’ve made as an author. The process was straightforward, the team was patient, and my book came out even better than I imagined.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Emily Carter</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="review-card">
+      <p class="review-text">
+        What I loved most was how Spines made everything stress-free. From editing to design, they handled it all. I finally felt like my story was in the hands of true professionals.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author James Rodriguez</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="review-card">
+      <p class="review-text">
+        I never thought publishing could be this easy. The team at Spines guided me at every step and gave my book a professional finish that I am truly proud of.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Sophia Mitchell</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(function(){
+    const $track = $(".carousel-track");
+    let $cards = $(".review-card");
+    let cardWidth = $cards.outerWidth(true);
+    let index = 1; 
+    let isDragging = false, startX, startTranslate, currentX;
+    let animationFrame;
+    $track.prepend($cards.last().clone());
+    $track.append($cards.first().clone());
+    $cards = $(".review-card");
+    cardWidth = $cards.outerWidth(true);
+    setTranslate(-cardWidth * index);
+    function getTranslateX() {
+        const style = window.getComputedStyle($track[0]);
+        const matrix = new WebKitCSSMatrix(style.transform);
+        return matrix.m41;
+    }
+    function setTranslate(x, withTransition = false) {
+        $track.css("transition", withTransition ? "transform 0.3s ease" : "none");
+        $track.css("transform", `translateX(${x}px)`);
+    }
+    function snapToCard() {
+        let moveX = getTranslateX();
+        let dragDistance = moveX - startTranslate;
+        let threshold = cardWidth / 4;
+        if(dragDistance < -threshold) index++;
+        else if(dragDistance > threshold) index--;
+        setTranslate(-index * cardWidth, true);
+        $track.one("transitionend", function(){
+            if(index === 0){ 
+                index = $cards.length - 2;
+                setTranslate(-index * cardWidth);
+            } 
+            else if(index === $cards.length - 1){ 
+                index = 1;
+                setTranslate(-index * cardWidth);
+            }
+        });
+    }
+    $track.on("mousedown touchstart", function(e){
+        isDragging = true;
+        startX = e.pageX || e.originalEvent.touches[0].pageX;
+        startTranslate = getTranslateX();
+        cancelAnimationFrame(animationFrame);
+    });
+    $(document).on("mousemove touchmove", function(e){
+        if(!isDragging) return;
+        currentX = (e.pageX || e.originalEvent.touches[0].pageX) - startX;
+        e.preventDefault(); 
+        function update() {
+            setTranslate(startTranslate + currentX);
+            if(isDragging) animationFrame = requestAnimationFrame(update);
+        }
+        cancelAnimationFrame(animationFrame);
+        animationFrame = requestAnimationFrame(update);
+    });
+    $(document).on("mouseup touchend", function(){
+        if(!isDragging) return;
+        isDragging = false;
+        cancelAnimationFrame(animationFrame);
+        snapToCard();
+    });
+    $(window).on("resize", function(){
+        cardWidth = $(".review-card").outerWidth(true);
+        setTranslate(-index * cardWidth);
+    });
+});
+</script>
+<section class="faq-section">
+    <div class="faq-container">
+        <div class="faq-text-container">
+            <h2 class="faq-main-title">Got Questions About Wikipedia Page Creation? We've Got Answers!</h2>
+            <p class="faq-subtitle">Explore our FAQs to learn how we help individuals, authors, and professionals create verified, well-structured, and compliant Wikipedia pages that highlight achievements and public contributions.</p>
+        </div>
+        <div class="faq-row">
+            <div class="faq-col-7">
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How Does Your Wikipedia Page Creation Service Work?
+                            <span class="faq-icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-closed" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We gather verifiable information, achievements, and notable contributions, then create a Wikipedia page draft that complies with Wikipedia’s guidelines for notability and sourcing.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How Much Does Wikipedia Page Creation Cost?
+                            <span class="faq-icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-closed" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Pricing depends on the complexity of the page, number of sources, and notability verification. We provide customized quotes for each Wikipedia page project.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What Is the Turnaround Time for a Wikipedia Page?
+                            <span class="faq-icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-closed" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Simple Wikipedia page drafts can be prepared within 3-5 business days. Pages requiring extensive verification, references, or notable achievements may take longer based on project scope.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Can I Customize the Content and Style of My Wikipedia Page?
+                            <span class="faq-icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-closed" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! You can provide input on achievements, notable contributions, and references. We ensure the Wikipedia page accurately reflects your professional profile while meeting all Wikipedia content guidelines.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Do You Handle Multiple or Bulk Wikipedia Page Projects?
+                            <span class="faq-icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-closed" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! We handle multiple Wikipedia page creations for professionals, authors, and organizations, maintaining consistent quality, accuracy, and compliance with Wikipedia standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-col-3 faq-right">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/amazon-ads-certified.webp" alt="Trusted Wikipedia Page Creation Partner" class="faq-image">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/helium-trusted-partner.webp" alt="High-Quality Wikipedia Page Creation" class="faq-image faq-bottom-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+});
+</script>
+
+<!-- Contact Us Work -->
+
+
+
+
+
+
+<!-- Footer -->
+   <footer class="footer">
+        <!-- Top Section -->
+        <div class="footer-top">
+            <div class="footer-top-left">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/logo/amazon-consultant.svg" alt="Amazon Consultant Logo">
+            </div>
+            <div class="footer-top-right">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/trustpilot.webp" alt="Trustpilot">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/clutch.webp" alt="Clutch">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/bark.webp" alt="Bark">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/reviews-io.webp" alt="Reviews.io">
+            </div>
+        </div>
+        <!-- Main Section -->
+        <div class="footer-main">
+            <!-- Column 1 -->
+            <div class="footer-column">
+                <h4>Smart Automation For Successful Ecommerce</h4>
+                <p>
+                    AmazonConsultant.ae is a top e-commerce automation company that helps you grow your investments by 4 times with smart automation. From store setup to product listings, we've got you covered.
+                </p>
+                <div class="payment-cards">
+                    <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/payment-cards.webp" alt="Payment Cards">
+                </div>
+            </div>
+            <!-- Column 2 -->
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="contact-us.html">Contact us</a></li>
+                    <li><a href="get-free-quote.html">Ger Free Quote</a></li>
+                    <li><a href="terms.html">Terms & Condition</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <!-- Column 3 A -->
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Amazon Book Publishing</a></li>
+                    <li><a href="#">Book Writing</a></li>
+                    <li><a href="#">Proofreading</a></li>
+                    <li><a href="#">Book Cover Design</a></li>
+                    <li><a href="#">Ghost Writing</a></li>
+                    <li><a href="#">Script Writing</a></li>
+                    <li><a href="#">Audio Book Publishing</a></li>
+                    <li><a href="#">Children Book Illustration</a></li>
+                    <li><a href="#">Custom Illustration</a></li>
+                    <li><a href="#">Children Book Writing</a></li>
+                    <li><a href="#">Story Writer</a></li>
+                    <li><a href="#">Book Binding</a></li>
+                </ul>
+            </div>
+            <!-- Column 3 B -->
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Ebooks Conversion</a></li>
+                    <li><a href="#">Magazine Writing</a></li>
+                    <li><a href="#">Novel Writer Publisher</a></li>
+                    <li><a href="#">Manuscript Assessment</a></li>
+                    <li><a href="#">Bookmark Printing</a></li>
+                    <li><a href="#">Thesis Printing Binding</a></li>
+                    <li><a href="#">Book Layout Design</a></li>
+                    <li><a href="#">Rhymes Writing</a></li>
+                    <li><a href="#">Biography Writer</a></li>
+                    <li><a href="#">Wikipedia Page Creation</a></li>
+                    <li><a href="#">Book Editing</a></li>
+                    <li><a href="#">Book Publishing</a></li>
+                </ul>
+            </div>
+            <!-- Column 3 B -->
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    
+                    <li><a href="#">Book Printing</a></li>
+                    <li><a href="#">Children Book Publishing</a></li>
+                    <li><a href="#">eBook Publishing</a></li>
+                    <li><a href="#">Novel Book Publishing</a></li>
+                    <li><a href="#">Poetry & Poem Publishing</a></li>
+                    <li><a href="#">Manuscript Writing Publishing</a></li>
+                    <li><a href="#">Wikipedia Page Monitoring</a></li>
+                    <li><a href="#">Wikipedia Page Translation</a></li>
+                    <li><a href="#">Art Book Publishing</a></li>
+                    <li><a href="#">Autobiography Writing</a></li>
+                    <li><a href="#">Memoir Writing</a></li>
+                    <li><a href="#">Business Book</a></li>
+                </ul>
+            </div>
+            
+            <!-- Column 4 -->
+            <div class="footer-column">
+                <h4>Reach Us:</h4>
+                <div class="reach-us-item">
+                    <span>&#9993;</span> info@amazonconsultant.ae
+                </div>
+                <div class="reach-us-item">
+                    <span>&#9742;</span> +971 542 265 592
+                </div>
+                <div class="reach-us-item">
+                    <span>&#9742;</span> +971 542 265 592
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img src="https://img.icons8.com/?size=100&id=106163&format=png&color=000000" alt=""></a>
+                    <a href="#"><img src="https://img.icons8.com/?size=100&id=32309&format=png&color=000000" alt=""></a>
+                    <a href="#"><img src="https://img.icons8.com/?size=100&id=A4DsujzAX4rw&format=png&color=000000" alt=""></a>
+                    <a href="#"><img src="https://img.icons8.com/?size=100&id=34349&format=png&color=000000" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            &copy; 2023 Amazon Consultant AE. All rights reserved
+        </div>
+    </footer>
+
+</body>
+</html>

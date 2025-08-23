@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Editing</title>
+    <link rel="stylesheet" href="about-us.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="service-template.css">
+</head>
+<body>
+    <!-- Above-Navbar -->
+    <div id="above-nav-maon-container">
+        <div id="above-nav-left">
+            <p>#1 Ecommerce Automation Consultants in the UAE and Across the Gulf</p>
+        </div>
+        <div id="above-nav-right">
+            <div id="above-nav-right-box">
+                <img src="https://img.icons8.com/?size=100&id=9730&format=png&color=000000" alt="">
+                <a href="#">+971 542 265 592</a>
+            </div>
+            <div id="above-nav-right-box">
+                <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000" alt="">
+                <a href="#">info@amazonconsultant.ae</a>
+            </div>
+        </div>
+    </div>
+    <!-- Above-Navbar -->
+    <nav class="navbar">
+  <div id="nav-inner">
+        <a href="index.html"> <img src="images/Logo.svg" class="logo" alt=""></a>
+
+    <ul class="nav-links">
+      <li><a href="about-us.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="#">Services <span>▾</span></a>
+        <ul class="dropdown-content">
+         <li><a href="#">Amazon Book Publishing</a></li>
+         <li><a href="#">Book Writing</a></li>
+         <li><a href="#">Proofreading</a></li>
+         <li><a href="#">Book Cover Design</a></li>
+         <li><a href="#">Ghost Writing</a></li>
+         <li><a href="#">Script Writing</a></li>
+         <li><a href="#">Audio Book Publishing</a></li>
+         <li><a href="#">Children Book Illustration</a></li>
+         <li><a href="#">Custom Illustration</a></li>
+         <li><a href="#">Children Book Writing</a></li>
+         <li><a href="#">Story Writer</a></li>
+         <li><a href="#">Book Binding</a></li>
+         <li><a href="#">Ebooks Conversation</a></li>
+         <li><a href="#">Magazine Writing</a></li>
+         <li><a href="#">Novel Writer Publisher</a></li>
+         <li><a href="#">Manuscript Assessment</a></li>
+         <li><a href="#">Bookmark Printing</a></li>
+         <li><a href="#">Thesis Printing Binding</a></li>
+         <li><a href="#">Book Layout Design</a></li>
+         <li><a href="#">Rhymes Writing</a></li>
+         <li><a href="#">Biography Writing</a></li>
+         <li><a href="#">Wikipedia Page Creation</a></li>
+         <li><a href="#">Book Editing</a></li>
+         <li><a href="#">Book Publishing</a></li>
+         <li><a href="#">Book Printing</a></li>
+         <li><a href="#">Children Book Publishing</a></li>
+         <li><a href="#">eBook Publishing</a></li>
+         <li><a href="#">Novel Book Publishing</a></li>
+         <li><a href="#">Poetry & Poem Publishing</a></li>
+         <li><a href="#">Manuscript Writing Publishing</a></li>
+         <li><a href="#">Wikipedia Page Monitoring</a></li>
+         <li><a href="#">Wikipedia Page Translation</a></li>
+         <li><a href="#">Art Book Publishing</a></li>
+         <li><a href="#">Autobiography Writing</a></li>
+         <li><a href="#">Memoir Writing</a></li>
+         <li><a href="#">Business Book</a></li>
+        </ul>
+      </li>
+      <li><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+    <a href="get-free-quote.html" style="text-decoration: none;"> <button class="launch-btn">Get Free Quote</button></a>
+    
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+<div class="side-menu" id="sideMenu">
+  <span class="close-btn" onclick="toggleMenu()">&times;</span>
+  <img src="images/Logo.svg" class="logo" alt="">
+  <ul>
+    <li><a href="about-us.html">About Us</a></li>
+    <li class="dropdown-toggle" onclick="toggleSideDropdown(this)">
+      Services <span>▾</span>
+    </li>
+    <ul class="side-dropdown">
+      <li><a href="#">Amazon Book Publishing</a></li>
+         <li><a href="#">Book Writing</a></li>
+         <li><a href="#">Proofreading</a></li>
+         <li><a href="#">Book Cover Design</a></li>
+         <li><a href="#">Ghost Writing</a></li>
+         <li><a href="#">Script Writing</a></li>
+         <li><a href="#">Audio Book Publishing</a></li>
+         <li><a href="#">Children Book Illustration</a></li>
+         <li><a href="#">Custom Illustration</a></li>
+         <li><a href="#">Children Book Writing</a></li>
+         <li><a href="#">Story Writer</a></li>
+         <li><a href="#">Book Binding</a></li>
+         <li><a href="#">Ebooks Conversation</a></li>
+         <li><a href="#">Magazine Writing</a></li>
+         <li><a href="#">Novel Writer Publisher</a></li>
+         <li><a href="#">Manuscript Assessment</a></li>
+         <li><a href="#">Bookmark Printing</a></li>
+         <li><a href="#">Thesis Printing Binding</a></li>
+         <li><a href="#">Book Layout Design</a></li>
+         <li><a href="#">Rhymes Writing</a></li>
+         <li><a href="#">Biography Writing</a></li>
+         <li><a href="#">Wikipedia Page Creation</a></li>
+         <li><a href="#">Book Editing</a></li>
+         <li><a href="#">Book Publishing</a></li>
+         <li><a href="#">Book Printing</a></li>
+         <li><a href="#">Children Book Publishing</a></li>
+         <li><a href="#">eBook Publishing</a></li>
+         <li><a href="#">Novel Book Publishing</a></li>
+         <li><a href="#">Poetry & Poem Publishing</a></li>
+         <li><a href="#">Manuscript Writing Publishing</a></li>
+         <li><a href="#">Wikipedia Page Monitoring</a></li>
+         <li><a href="#">Wikipedia Page Translation</a></li>
+         <li><a href="#">Art Book Publishing</a></li>
+         <li><a href="#">Autobiography Writing</a></li>
+         <li><a href="#">Memoir Writing</a></li>
+         <li><a href="#">Business Book</a></li>
+    </ul>
+    <li><a href="contact-us.html">Contact Us</a></li>
+  </ul>
+  <a href="get-free-quote.html" style="text-decoration: none;"> <button class="launch-btn" id="sidemenu-launch-btn">Get Free Quote</button></a>
+</div>
+<script>
+  function toggleMenu() {
+    document.getElementById("sideMenu").classList.toggle("active");
+  }
+
+  function toggleSideDropdown(el) {
+    el.classList.toggle("active");
+    el.nextElementSibling.classList.toggle("active");
+  }
+</script>
+    <!-- Navbar -->
+
+
+
+
+
+
+
+
+<!-- Contact Us Work -->
+<div class="service-header">
+    <div class="service-header-inner">
+        <div class="service-header-left">
+           <h1>Professional Book Editing Service</h1>
+           <p>Want your book to shine with clarity and professionalism? Our book editing service ensures your manuscript is polished, error-free, and ready for publication, enhancing structure, style, grammar, and narrative flow while maintaining your unique voice.</p>
+            <div class="header-left-btn-container">
+                <button class="header-left-primary-btn">
+                    Get My Book Edited
+                    <img src="https://img.icons8.com/?size=100&id=12628&format=png&color=000000" alt="Book Editing Service">
+                </button>
+                <button class="header-left-secondary-btn">
+                    <img src="https://img.icons8.com/?size=100&id=9730&format=png&color=FFFFFF" alt="Call Us"> 
+                    +92 123 456 789
+                </button>
+            </div>
+        </div>
+        <div class="service-header-right">
+            <img src="https://www.amazonconsultant.ae/assets/frontend/images/sample/walmart-store-in-uae.webp" alt="Professional Book Editing Service">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+   <!-- Logo Container -->
+        <div id="header-logo-wrapper" >
+  <div id="header-logo-container">
+    <img src="images/amazon-kindle.webp" alt="amazon-kindle">
+    <img src="images/Barnes&Noble.png" alt="Barnes&Noble">
+    <img src="images/Rakuten_Kobo_logo.png" alt="Rakuten_Kobo_logo">
+    <img src="images/IngramSpark.jpg" alt="IngramSpark">
+    <img src="images/Google Books.png" alt="Google Books">
+    <img src="images/Lulu logo.png" alt="Lulu logo">
+
+    <!-- duplicate logos for seamless looping -->
+    <img src="images/amazon-kindle.webp" alt="amazon-kindle">
+    <img src="images/Barnes&Noble.png" alt="Barnes&Noble">
+    <img src="images/Rakuten_Kobo_logo.png" alt="Rakuten_Kobo_logo">
+    <img src="images/IngramSpark.jpg" alt="IngramSpark">
+    <img src="images/Google Books.png" alt="Google Books">
+    <img src="images/Lulu logo.png" alt="Lulu logo">
+  </div>
+</div>
+<div class="about-solution-heading-container">
+    <h2>Your One-Stop Solution for Professional Book Editing</h2>
+</div>
+
+<div class="about-solution-card-main-container">
+    <div class="about-solution-card-row-container">
+        <!-- 1 -->
+        <div class="about-solutiion-card-container">
+            <div class="about-solution-img-container">
+                <img src="https://img.icons8.com/?size=100&id=78230&format=png&color=ffa717" alt="">
+            </div>
+            <div class="about-solution-text-container">
+                <h3>Manuscript Review & Consultation</h3>
+                <p>We discuss your book, target audience, and goals. Our team reviews your manuscript to understand the content, style, and structure before editing begins.</p>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="about-solutiion-card-container">
+            <div class="about-solution-img-container">
+                <img src="https://img.icons8.com/?size=100&id=23183&format=png&color=ffa717" alt="">
+            </div>
+            <div class="about-solution-text-container">
+                <h3>Content Structuring & Style Refinement</h3>
+                <p>We enhance your manuscript’s structure, clarity, and flow while refining language, grammar, and style to ensure a professional and engaging reading experience.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-solution-card-row-container">
+        <!-- 3 -->
+        <div class="about-solutiion-card-container">
+            <div class="about-solution-img-container">
+                <img src="https://img.icons8.com/?size=100&id=36195&format=png&color=ffa717" alt="">
+            </div>
+            <div class="about-solution-text-container">
+                <h3>Highlighting Key Themes & Consistency</h3>
+                <p>We ensure consistency in tone, style, and content, emphasizing your book’s key themes and ideas, making your narrative cohesive and impactful.</p>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="about-solutiion-card-container">
+            <div class="about-solution-img-container">
+                <img src="https://img.icons8.com/?size=100&id=iV2d2QjFyUYL&format=png&color=ffa717" alt="">
+            </div>
+            <div class="about-solution-text-container">
+                <h3>Final Draft & Publication Guidance</h3>
+                <p>We deliver a polished, professionally edited manuscript and provide guidance for publishing, formatting, and presenting your book effectively to your audience.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- Automated Amazon -->
+<section id="book-editing-section" class="automated-amazon-section">
+  <div class="automated-amazon-container">
+    <div class="automated-amazon-image-column">
+      <img src="https://www.amazonconsultant.ae/assets/frontend/images/sample/automated-amazon-store.webp" alt="Professional Book Editing">
+    </div>
+    <div class="automated-amazon-content-column">
+      <h2 class="automated-amazon-heading">A Path That Leads to Professional Book Editing</h2>
+      <ul class="automated-amazon-list">
+        <li>Share your manuscript, themes, and objectives. We create a structured editing plan to enhance clarity, flow, and narrative impact.</li>
+        <li>Our editing team ensures proper structure, style consistency, grammar accuracy, and a professional, polished reading experience.</li>
+        <li>Receive guidance on refining chapters, strengthening themes, and preparing the final manuscript for publishing or submission.</li>
+      </ul>
+      <div class="automated-amazon-buttons">
+        <a href="get-free-quote.html" class="automated-amazon-button automated-amazon-build-store">Edit My Book</a>
+        <a href="tel:+971542265592" class="automated-amazon-button automated-amazon-phone">+971 542 265 592</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Start your Publishing -->
+<div class="start-your-store-text-container">
+  <h2>Professional Book Editing — Perfecting Every Chapter</h2>
+  <p>From drafts to final manuscripts, we provide expert book editing services. Choose the option that best fits your storytelling and publishing needs. Here are a few services we offer:</p>
+</div>
+<!-- boxes -->
+
+<div class="start-your-store-wrap">
+  <div class="start-your-store-grid">
+
+    <div class="start-your-store-card">
+      <img src="https://img.icons8.com/?size=100&id=36099&format=png&color=000000" alt="default" class="start-your-store-default-img">
+      <img src="https://img.icons8.com/?size=100&id=36099&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
+      <h3>Manuscript Structuring</h3>
+      <p>We organize your chapters, story arcs, and key content into a coherent structure, ensuring smooth flow and readability throughout your book.</p>
+    </div>
+
+    <div class="start-your-store-card">
+      <img src="https://img.icons8.com/?size=100&id=9AKXsmexhjxe&format=png&color=1A1A1A" alt="default" class="start-your-store-default-img">
+      <img src="https://img.icons8.com/?size=100&id=9AKXsmexhjxe&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
+      <h3>Style & Language Refinement</h3>
+      <p>We enhance clarity, tone, and consistency, refining language and narrative style to make your book engaging, polished, and publication-ready.</p>
+    </div>
+
+    <div class="start-your-store-card">
+      <img src="https://img.icons8.com/?size=100&id=JBsPscMO0aat&format=png&color=000000" alt="default" class="start-your-store-default-img">
+      <img src="https://img.icons8.com/?size=100&id=JBsPscMO0aat&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
+      <h3>Editing & Proofreading</h3>
+      <p>We carefully review your manuscript for grammar, punctuation, and narrative consistency, ensuring a high-quality and professional final draft.</p>
+    </div>
+
+    <div class="start-your-store-card">
+      <img src="https://img.icons8.com/?size=100&id=GytajYfHdKAo&format=png&color=1A1A1A" alt="default" class="start-your-store-default-img">
+      <img src="https://img.icons8.com/?size=100&id=GytajYfHdKAo&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
+      <h3>Publishing & Submission Guidance</h3>
+      <p>We provide guidance for submitting your manuscript to publishers or self-publishing platforms, ensuring your book is presented professionally to readers.</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- Testimonial -->
+     <section id="review-heading-section">
+<div class="review-heading-container">
+    <h2 class="review-heading-h2">
+        <span class="review-heading-span">15K+ Authors & Writers</span> Perfected and Published Their Books with Our Expert Editing Services
+    </h2>
+    <p class="review-heading-p">
+        Helping authors, writers, and professionals refine manuscripts, enhance narrative flow, and polish language to produce high-quality, publication-ready books that captivate readers and showcase their stories effectively.
+    </p>
+</div>
+
+
+
+
+
+
+</section>
+
+<div class="carousel-container">
+  <div class="carousel-track">
+    <!-- 1 -->
+    <div class="review-card">
+      <p class="review-text">
+        Publishing with Spines was one of the best decisions I’ve made as an author. The process was straightforward, the team was patient, and my book came out even better than I imagined.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Emily Carter</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="review-card">
+      <p class="review-text">
+        What I loved most was how Spines made everything stress-free. From editing to design, they handled it all. I finally felt like my story was in the hands of true professionals.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author James Rodriguez</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="review-card">
+      <p class="review-text">
+        I never thought publishing could be this easy. The team at Spines guided me at every step and gave my book a professional finish that I am truly proud of.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Sophia Mitchell</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+     <!-- 1 -->
+    <div class="review-card">
+      <p class="review-text">
+        Publishing with Spines was one of the best decisions I’ve made as an author. The process was straightforward, the team was patient, and my book came out even better than I imagined.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Emily Carter</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="review-card">
+      <p class="review-text">
+        What I loved most was how Spines made everything stress-free. From editing to design, they handled it all. I finally felt like my story was in the hands of true professionals.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author James Rodriguez</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="review-card">
+      <p class="review-text">
+        I never thought publishing could be this easy. The team at Spines guided me at every step and gave my book a professional finish that I am truly proud of.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Sophia Mitchell</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+     <!-- 1 -->
+    <div class="review-card">
+      <p class="review-text">
+        Publishing with Spines was one of the best decisions I’ve made as an author. The process was straightforward, the team was patient, and my book came out even better than I imagined.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Emily Carter</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="review-card">
+      <p class="review-text">
+        What I loved most was how Spines made everything stress-free. From editing to design, they handled it all. I finally felt like my story was in the hands of true professionals.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author James Rodriguez</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="review-card">
+      <p class="review-text">
+        I never thought publishing could be this easy. The team at Spines guided me at every step and gave my book a professional finish that I am truly proud of.
+      </p>
+      <div class="review-author">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Author Image">
+        <div>
+          <div class="author-name">Author Sophia Mitchell</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(function(){
+    const $track = $(".carousel-track");
+    let $cards = $(".review-card");
+    let cardWidth = $cards.outerWidth(true);
+    let index = 1; 
+    let isDragging = false, startX, startTranslate, currentX;
+    let animationFrame;
+    $track.prepend($cards.last().clone());
+    $track.append($cards.first().clone());
+    $cards = $(".review-card");
+    cardWidth = $cards.outerWidth(true);
+    setTranslate(-cardWidth * index);
+    function getTranslateX() {
+        const style = window.getComputedStyle($track[0]);
+        const matrix = new WebKitCSSMatrix(style.transform);
+        return matrix.m41;
+    }
+    function setTranslate(x, withTransition = false) {
+        $track.css("transition", withTransition ? "transform 0.3s ease" : "none");
+        $track.css("transform", `translateX(${x}px)`);
+    }
+    function snapToCard() {
+        let moveX = getTranslateX();
+        let dragDistance = moveX - startTranslate;
+        let threshold = cardWidth / 4;
+        if(dragDistance < -threshold) index++;
+        else if(dragDistance > threshold) index--;
+        setTranslate(-index * cardWidth, true);
+        $track.one("transitionend", function(){
+            if(index === 0){ 
+                index = $cards.length - 2;
+                setTranslate(-index * cardWidth);
+            } 
+            else if(index === $cards.length - 1){ 
+                index = 1;
+                setTranslate(-index * cardWidth);
+            }
+        });
+    }
+    $track.on("mousedown touchstart", function(e){
+        isDragging = true;
+        startX = e.pageX || e.originalEvent.touches[0].pageX;
+        startTranslate = getTranslateX();
+        cancelAnimationFrame(animationFrame);
+    });
+    $(document).on("mousemove touchmove", function(e){
+        if(!isDragging) return;
+        currentX = (e.pageX || e.originalEvent.touches[0].pageX) - startX;
+        e.preventDefault(); 
+        function update() {
+            setTranslate(startTranslate + currentX);
+            if(isDragging) animationFrame = requestAnimationFrame(update);
+        }
+        cancelAnimationFrame(animationFrame);
+        animationFrame = requestAnimationFrame(update);
+    });
+    $(document).on("mouseup touchend", function(){
+        if(!isDragging) return;
+        isDragging = false;
+        cancelAnimationFrame(animationFrame);
+        snapToCard();
+    });
+    $(window).on("resize", function(){
+        cardWidth = $(".review-card").outerWidth(true);
+        setTranslate(-index * cardWidth);
+    });
+});
+</script>
+<section class="faq-section">
+    <div class="faq-container">
+        <div class="faq-text-container">
+            <h2 class="faq-main-title">Got Questions About Book Editing? We've Got Answers!</h2>
+            <p class="faq-subtitle">Explore our FAQs to learn how we help authors, writers, and professionals refine manuscripts, enhance narrative flow, and produce high-quality, publication-ready books.</p>
+        </div>
+        <div class="faq-row">
+            <div class="faq-col-7">
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How Does Your Book Editing Service Work?
+                            <span class="faq-icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-closed" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We review your manuscript for structure, clarity, grammar, and narrative flow. Our team provides detailed editing, suggestions, and corrections to enhance your book’s readability and impact.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How Much Does Book Editing Cost?
+                            <span class="faq-icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-closed" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Pricing depends on manuscript length, complexity, and the level of editing required. We provide personalized quotes for each book editing project.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What Is the Turnaround Time for Book Editing?
+                            <span class="faq-icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-closed" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Short manuscripts can be edited within 3-7 business days. Longer or more complex books are delivered based on length, depth of editing, and client requirements.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Can I Customize the Editing Style and Focus?
+                            <span class="faq-icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-closed" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! You can specify preferences for style, tone, and areas to focus on. We tailor our editing to maintain your unique voice while ensuring clarity, flow, and correctness.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Do You Handle Multiple or Bulk Book Editing Projects?
+                            <span class="faq-icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-closed" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon faq-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! We handle multiple manuscripts and book series for authors and publishers, ensuring consistent quality, timely delivery, and professional editing standards across all projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-col-3 faq-right">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/amazon-ads-certified.webp" alt="Trusted Book Editing Partner" class="faq-image">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/helium-trusted-partner.webp" alt="High-Quality Book Editing" class="faq-image faq-bottom-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+});
+</script>
+
+<!-- Contact Us Work -->
+
+
+
+
+
+
+<!-- Footer -->
+   <footer class="footer">
+        <!-- Top Section -->
+        <div class="footer-top">
+            <div class="footer-top-left">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/logo/amazon-consultant.svg" alt="Amazon Consultant Logo">
+            </div>
+            <div class="footer-top-right">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/trustpilot.webp" alt="Trustpilot">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/clutch.webp" alt="Clutch">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/bark.webp" alt="Bark">
+                <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/reviews-io.webp" alt="Reviews.io">
+            </div>
+        </div>
+        <!-- Main Section -->
+        <div class="footer-main">
+            <!-- Column 1 -->
+            <div class="footer-column">
+                <h4>Smart Automation For Successful Ecommerce</h4>
+                <p>
+                    AmazonConsultant.ae is a top e-commerce automation company that helps you grow your investments by 4 times with smart automation. From store setup to product listings, we've got you covered.
+                </p>
+                <div class="payment-cards">
+                    <img src="https://www.amazonconsultant.ae/assets/frontend/images/icon/payment-cards.webp" alt="Payment Cards">
+                </div>
+            </div>
+            <!-- Column 2 -->
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="contact-us.html">Contact us</a></li>
+                    <li><a href="get-free-quote.html">Ger Free Quote</a></li>
+                    <li><a href="terms.html">Terms & Condition</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <!-- Column 3 A -->
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Amazon Book Publishing</a></li>
+                    <li><a href="#">Book Writing</a></li>
+                    <li><a href="#">Proofreading</a></li>
+                    <li><a href="#">Book Cover Design</a></li>
+                    <li><a href="#">Ghost Writing</a></li>
+                    <li><a href="#">Script Writing</a></li>
+                    <li><a href="#">Audio Book Publishing</a></li>
+                    <li><a href="#">Children Book Illustration</a></li>
+                    <li><a href="#">Custom Illustration</a></li>
+                    <li><a href="#">Children Book Writing</a></li>
+                    <li><a href="#">Story Writer</a></li>
+                    <li><a href="#">Book Binding</a></li>
+                </ul>
+            </div>
+            <!-- Column 3 B -->
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Ebooks Conversion</a></li>
+                    <li><a href="#">Magazine Writing</a></li>
+                    <li><a href="#">Novel Writer Publisher</a></li>
+                    <li><a href="#">Manuscript Assessment</a></li>
+                    <li><a href="#">Bookmark Printing</a></li>
+                    <li><a href="#">Thesis Printing Binding</a></li>
+                    <li><a href="#">Book Layout Design</a></li>
+                    <li><a href="#">Rhymes Writing</a></li>
+                    <li><a href="#">Biography Writer</a></li>
+                    <li><a href="#">Wikipedia Page Creation</a></li>
+                    <li><a href="#">Book Editing</a></li>
+                    <li><a href="#">Book Publishing</a></li>
+                </ul>
+            </div>
+            <!-- Column 3 B -->
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    
+                    <li><a href="#">Book Printing</a></li>
+                    <li><a href="#">Children Book Publishing</a></li>
+                    <li><a href="#">eBook Publishing</a></li>
+                    <li><a href="#">Novel Book Publishing</a></li>
+                    <li><a href="#">Poetry & Poem Publishing</a></li>
+                    <li><a href="#">Manuscript Writing Publishing</a></li>
+                    <li><a href="#">Wikipedia Page Monitoring</a></li>
+                    <li><a href="#">Wikipedia Page Translation</a></li>
+                    <li><a href="#">Art Book Publishing</a></li>
+                    <li><a href="#">Autobiography Writing</a></li>
+                    <li><a href="#">Memoir Writing</a></li>
+                    <li><a href="#">Business Book</a></li>
+                </ul>
+            </div>
+            
+            <!-- Column 4 -->
+            <div class="footer-column">
+                <h4>Reach Us:</h4>
+                <div class="reach-us-item">
+                    <span>&#9993;</span> info@amazonconsultant.ae
+                </div>
+                <div class="reach-us-item">
+                    <span>&#9742;</span> +971 542 265 592
+                </div>
+                <div class="reach-us-item">
+                    <span>&#9742;</span> +971 542 265 592
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img src="https://img.icons8.com/?size=100&id=106163&format=png&color=000000" alt=""></a>
+                    <a href="#"><img src="https://img.icons8.com/?size=100&id=32309&format=png&color=000000" alt=""></a>
+                    <a href="#"><img src="https://img.icons8.com/?size=100&id=A4DsujzAX4rw&format=png&color=000000" alt=""></a>
+                    <a href="#"><img src="https://img.icons8.com/?size=100&id=34349&format=png&color=000000" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            &copy; 2023 Amazon Consultant AE. All rights reserved
+        </div>
+    </footer>
+
+</body>
+</html>
