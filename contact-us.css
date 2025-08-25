@@ -420,6 +420,9 @@
     font-size: 22px;}
     .contact-section-phone {
     font-size: 20px;}
+    .contact-section-submit-button{
+        width: 100%;
+    }
 
 
 }

@@ -208,7 +208,7 @@
         <!-- 1 -->
         <div class="about-solutiion-card-container">
             <div class="about-solution-img-container">
-                <img src="https://img.icons8.com/?size=100&id=78230&format=png&color=ffa717" alt="">
+                <img src="https://img.icons8.com/?size=100&id=61861&format=png&color=ffa717" alt="">
             </div>
             <div class="about-solution-text-container">
                 <h3>Concept Development & Consultation</h3>
@@ -218,7 +218,7 @@
         <!-- 2 -->
         <div class="about-solutiion-card-container">
             <div class="about-solution-img-container">
-                <img src="https://img.icons8.com/?size=100&id=23183&format=png&color=ffa717" alt="">
+                <img src="https://img.icons8.com/?size=100&id=40314&format=png&color=ffa717" alt="">
             </div>
             <div class="about-solution-text-container">
                 <h3>Illustration & Artwork Creation</h3>
@@ -231,7 +231,7 @@
         <!-- 3 -->
         <div class="about-solutiion-card-container">
             <div class="about-solution-img-container">
-                <img src="https://img.icons8.com/?size=100&id=36195&format=png&color=ffa717" alt="">
+                <img src="https://img.icons8.com/?size=100&id=PnraMXYBUJaT&format=png&color=ffa717" alt="">
             </div>
             <div class="about-solution-text-container">
                 <h3>Formatting & Project Preparation</h3>
@@ -241,7 +241,7 @@
         <!-- 4 -->
         <div class="about-solutiion-card-container">
             <div class="about-solution-img-container">
-                <img src="https://img.icons8.com/?size=100&id=iV2d2QjFyUYL&format=png&color=ffa717" alt="">
+                <img src="https://img.icons8.com/?size=100&id=62234&format=png&color=ffa717" alt="">
             </div>
             <div class="about-solution-text-container">
                 <h3>Marketing & Launch Support</h3>
@@ -348,22 +348,22 @@
     </div>
 
     <div class="start-your-store-card">
-      <img src="https://img.icons8.com/?size=100&id=9AKXsmexhjxe&format=png&color=1A1A1A" alt="default" class="start-your-store-default-img">
-      <img src="https://img.icons8.com/?size=100&id=9AKXsmexhjxe&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
+      <img src="https://img.icons8.com/?size=100&id=ZiuCbs24seBx&format=png&color=000000" alt="default" class="start-your-store-default-img">
+      <img src="https://img.icons8.com/?size=100&id=ZiuCbs24seBx&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
       <h3>Apple Books / Digital</h3>
       <p>Reach readers worldwide with professional illustrations formatted for vibrant digital reading experiences on Apple Books or other eBook platforms.</p>
     </div>
 
     <div class="start-your-store-card">
-      <img src="https://img.icons8.com/?size=100&id=JBsPscMO0aat&format=png&color=000000" alt="default" class="start-your-store-default-img">
-      <img src="https://img.icons8.com/?size=100&id=JBsPscMO0aat&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
+      <img src="https://img.icons8.com/?size=100&id=10338&format=png&color=000000" alt="default" class="start-your-store-default-img">
+      <img src="https://img.icons8.com/?size=100&id=10338&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
       <h3>Print Publications</h3>
       <p>Prepare your illustrated projects for print, reaching bookstores, libraries, or custom print orders with professional layouts and high-resolution artwork.</p>
     </div>
 
     <div class="start-your-store-card">
-      <img src="https://img.icons8.com/?size=100&id=GytajYfHdKAo&format=png&color=1A1A1A" alt="default" class="start-your-store-default-img">
-      <img src="https://img.icons8.com/?size=100&id=GytajYfHdKAo&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
+      <img src="https://img.icons8.com/?size=100&id=2963&format=png&color=000000" alt="default" class="start-your-store-default-img">
+      <img src="https://img.icons8.com/?size=100&id=2963&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
       <h3>Global Distribution & Retail</h3>
       <p>Distribute your illustrations across global retail or online platforms, reaching a wider audience and making your artwork accessible worldwide.</p>
     </div>
@@ -773,19 +773,30 @@ document.addEventListener('DOMContentLoaded', function() {
                     </p>
 
                     <!-- The contact form -->
-                    <form id="contact-section-contact-form" class="contact-section-contact-form" 
-      method="POST" action="send_mail.php" enctype="multipart/form-data">
+                   <form id="contact-section-contact-form" class="contact-section-contact-form" 
+      method="POST" action="send_mail.php" enctype="multipart/form-data"
+      style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
 
     <!-- Row 1: Full Name + Phone -->
-    <div class="contact-section-input-group">
-        <input type="text" name="name" id="contact-section-name" class="contact-section-input" placeholder="Full Name" required>
-        <input type="text" name="phone" id="contact-section-phone" class="contact-section-input" placeholder="Phone No" required>
+    <div class="contact-section-input-group" 
+         style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
+        <input type="text" name="name" id="contact-section-name" 
+               class="contact-section-input" placeholder="Full Name" required 
+               style="width: 100%; padding: 10px;">
+        <input type="text" name="phone" id="contact-section-phone" 
+               class="contact-section-input" placeholder="Phone No" required 
+               style="width: 100%; padding: 10px;">
     </div>
 
     <!-- Row 2: Email + Genre Dropdown -->
-    <div class="contact-section-input-group">
-        <input type="email" name="email" id="contact-section-email" class="contact-section-input" placeholder="Email" required>
-        <select name="genre" id="contact-section-genre" class="contact-section-input" required>
+    <div class="contact-section-input-group" 
+         style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
+        <input type="email" name="email" id="contact-section-email" 
+               class="contact-section-input" placeholder="Email" required 
+               style="width: 100%; padding: 10px;">
+        <select name="genre" id="contact-section-genre" 
+                class="contact-section-input" required 
+                style="width: 100%; padding: 10px;">
             <option value="" selected>Select Genre</option>
             <option value="Fiction">Fiction</option>
             <option value="Non-Fiction">Non-Fiction</option>
@@ -798,22 +809,32 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 
     <!-- Row 3: File Upload + Book Title -->
-    <div class="contact-section-input-group">
-        <input type="file" name="file" id="contact-section-file" class="contact-section-input" required>
-        <input type="text" name="book_title" id="contact-section-book-title" class="contact-section-input" placeholder="Book Title" required>
+    <div class="contact-section-input-group" 
+         style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
+        <input type="file" name="file" id="contact-section-file" 
+               class="contact-section-input" required 
+               style="width: 100%; padding: 10px;">
+        <input type="text" name="book_title" id="contact-section-book-title" 
+               class="contact-section-input" placeholder="Book Title" required 
+               style="width: 100%; padding: 10px;">
     </div>
 
     <!-- Row 4: Details -->
     <div>
-        <textarea name="details" id="contact-section-details" class="contact-section-input" placeholder="Details" required></textarea>
+        <textarea name="details" id="contact-section-details" 
+                  class="contact-section-input" placeholder="Details" required 
+                  style="width: 100%; padding: 10px; min-height: 120px;"></textarea>
     </div>
     
     <!-- Row 5: Response time message + Submit Button -->
-    <div class="contact-section-submit-container">
-        <p class="contact-section-response-time">
+    <div class="contact-section-submit-container" 
+         style="display: flex; flex-direction: column; gap: 10px; width: 100%;">
+        <p class="agreement-text" style="margin: 0; font-size: 14px; color: #555;">
             We normally respond within 24 hours. If you haven't received anything, check your spam folder.
         </p>
-        <button type="submit" id="contact-section-submit-button" class="contact-section-submit-button">
+        <button type="submit" id="contact-section-submit-button" 
+                class="contact-section-submit-button" 
+                style="padding: 12px; background: #000; color: #fff; border: none; cursor: pointer; width: 100%;">
             Submit
         </button>
     </div>

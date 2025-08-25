@@ -2207,6 +2207,12 @@ header {
     font-size: small;
 }
 }
+@media (max-width: 350px) {
+.faq-icon-container {
+    width: 24px;
+    height: 18px;
+}
+}
 
 /* Above Footer */
    .above-footer-container {

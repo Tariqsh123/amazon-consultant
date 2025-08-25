@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon Consultant</title>
 
+    <link rel="stylesheet" href="contact-us.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -1428,6 +1429,145 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+<section id="contact-section-main" class="contact-section-main">
+        <div class="contact-section-card">
+            <!-- Inner container for the two-column layout -->
+            <div class="contact-section-columns">
+
+                <!-- Left column: "Get in Touch" information -->
+                <div id="contact-section-info" class="contact-section-info">
+                    
+                    <!-- Icon placeholder: a simple hand emoji -->
+                    <div class="contact-section-icon-container">
+                        👋
+                    </div>
+
+                    <!-- Heading -->
+                    <h3 class="contact-section-heading">
+                        Get in Touch
+                    </h3>
+
+                    <!-- Sub-heading -->
+                    <p class="contact-section-subheading">
+                        Need assistance regarding your project? Give us a quick call on:
+                    </p>
+
+                    <!-- Phone Number -->
+                    <p class="contact-section-phone">
+                        +971 542 265 592
+                    </p>
+
+                    <!-- Business hours -->
+                    <p class="contact-section-hours">
+                        We are available from Mon to Fri (9 am - 6 pm)
+                    </p>
+                    
+                    <!-- OR divider with lines -->
+                    <div class="contact-section-divider">
+                        <div class="contact-section-divider-line"></div>
+                        <span class="contact-section-divider-text">OR</span>
+                        <div class="contact-section-divider-line"></div>
+                    </div>
+                    
+                    <!-- Live Chat button -->
+                    <button id="contact-section-chat-button" class="contact-section-chat-button">
+                        <!-- Inline SVG for the chat icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.135 2.918 2.529 3.018l-.348 2.915c-.09.75.27 1.5.857 1.954.587.454 1.4.606 2.051.411l.666-.2c.421.136.861.21 1.306.21 3.55 0 6.447-2.923 6.447-6.529S15.55 6.236 12 6.236c-3.55 0-6.447 2.923-6.447 6.529l.006.012c.036.756.248 1.492.628 2.167" />
+                        </svg>                      
+                        <span>Start Live Chat</span>
+                    </button>
+                </div>
+
+                <!-- Right column: Contact Form -->
+                <div id="contact-section-form-container" class="contact-section-form-container">
+                    
+                    <!-- Form Heading -->
+                    <h3 class="contact-section-form-heading">
+                        Need Support?
+                    </h3>
+
+                    <!-- Form Sub-heading -->
+                    <p class="contact-section-form-subheading">
+                        Reach out to our team, and we'll respond as soon as possible with tailored packages.
+                    </p>
+
+                    <!-- The contact form -->
+                  <form id="contact-section-contact-form" class="contact-section-contact-form" 
+      method="POST" action="send_mail.php" enctype="multipart/form-data"
+      style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
+
+    <!-- Row 1: Full Name + Phone -->
+    <div class="contact-section-input-group" 
+         style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
+        <input type="text" name="name" id="contact-section-name" 
+               class="contact-section-input" placeholder="Full Name" required 
+               style="width: 100%; padding: 10px;">
+        <input type="text" name="phone" id="contact-section-phone" 
+               class="contact-section-input" placeholder="Phone No" required 
+               style="width: 100%; padding: 10px;">
+    </div>
+
+    <!-- Row 2: Email + Genre Dropdown -->
+    <div class="contact-section-input-group" 
+         style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
+        <input type="email" name="email" id="contact-section-email" 
+               class="contact-section-input" placeholder="Email" required 
+               style="width: 100%; padding: 10px;">
+        <select name="genre" id="contact-section-genre" 
+                class="contact-section-input" required 
+                style="width: 100%; padding: 10px;">
+            <option value="" selected>Select Genre</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Non-Fiction">Non-Fiction</option>
+            <option value="Romance">Romance</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Biography">Biography</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+
+    <!-- Row 3: File Upload + Book Title -->
+    <div class="contact-section-input-group" 
+         style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
+        <input type="file" name="file" id="contact-section-file" 
+               class="contact-section-input" required 
+               style="width: 100%; padding: 10px;">
+        <input type="text" name="book_title" id="contact-section-book-title" 
+               class="contact-section-input" placeholder="Book Title" required 
+               style="width: 100%; padding: 10px;">
+    </div>
+
+    <!-- Row 4: Details -->
+    <div>
+        <textarea name="details" id="contact-section-details" 
+                  class="contact-section-input" placeholder="Details" required 
+                  style="width: 100%; padding: 10px; min-height: 120px;"></textarea>
+    </div>
+    
+    <!-- Row 5: Response time message + Submit Button -->
+    <div class="contact-section-submit-container" 
+         style="display: flex; flex-direction: column; gap: 10px; width: 100%;">
+        <p class="agreement-text" style="margin: 0; font-size: 14px; color: #555;">
+            We normally respond within 24 hours. If you haven't received anything, check your spam folder.
+        </p>
+        <button type="submit" id="contact-section-submit-button" 
+                class="contact-section-submit-button" 
+                style="padding: 12px; background: #000; color: #fff; border: none; cursor: pointer; width: 100%;">
+            Submit
+        </button>
+    </div>
+</form>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
 <!-- Above Footer -->
  <section id="above-footer-container" class="above-footer-container">
     <div class="above-footer-content">
@@ -1440,6 +1580,8 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     </div>
 </section>
+
+
 
 <!-- Footer -->
    <footer class="footer">

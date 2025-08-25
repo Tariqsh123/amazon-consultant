@@ -343,29 +343,29 @@
   <div class="start-your-store-grid">
     
     <div class="start-your-store-card">
-      <img src="https://img.icons8.com/?size=100&id=59836&format=png&color=000000" alt="default" class="start-your-store-default-img">
-      <img src="https://img.icons8.com/?size=100&id=59836&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
+      <img src="https://img.icons8.com/?size=100&id=wqdFOg80Aius&format=png&color=000000" alt="default" class="start-your-store-default-img">
+      <img src="https://img.icons8.com/?size=100&id=wqdFOg80Aius&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
       <h3>Custom Cover Design</h3>
       <p>We design unique, professional book covers that reflect your story and captivate your target audience at first glance.</p>
     </div>
 
     <div class="start-your-store-card">
-      <img src="https://img.icons8.com/?size=100&id=99967&format=png&color=000000" alt="default" class="start-your-store-default-img">
-      <img src="https://img.icons8.com/?size=100&id=99967&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
+      <img src="https://img.icons8.com/?size=100&id=9435&format=png&color=000000" alt="default" class="start-your-store-default-img">
+      <img src="https://img.icons8.com/?size=100&id=9435&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
       <h3>Genre-Specific Designs</h3>
       <p>From romance to thrillers, business to self-help — we craft designs tailored to your book’s genre and reader expectations.</p>
     </div>
 
     <div class="start-your-store-card">
-      <img src="https://img.icons8.com/?size=100&id=10758&format=png&color=000000" alt="default" class="start-your-store-default-img">
-      <img src="https://img.icons8.com/?size=100&id=10758&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
+      <img src="https://img.icons8.com/?size=100&id=ZgWj6fV3tApn&format=png&color=000000" alt="default" class="start-your-store-default-img">
+      <img src="https://img.icons8.com/?size=100&id=ZgWj6fV3tApn&format=png&color=ffffff" alt="hover" class="start-your-store-hover-img">
       <h3>eBook & Print Formatting</h3>
       <p>We deliver covers optimized for both digital platforms (Amazon Kindle, Apple Books, etc.) and high-quality print editions.</p>
     </div>
 
     <div class="start-your-store-card">
-      <img src="https://img.icons8.com/?size=100&id=12246&format=png&color=000000" alt="default" class="start-your-store-default-img">
-      <img src="https://img.icons8.com/?size=100&id=12246&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
+      <img src="https://img.icons8.com/?size=100&id=yzkidsOEr2yT&format=png&color=000000" alt="default" class="start-your-store-default-img">
+      <img src="https://img.icons8.com/?size=100&id=yzkidsOEr2yT&format=png&color=FFFFFF" alt="hover" class="start-your-store-hover-img">
       <h3>Final Touch & Delivery</h3>
       <p>We provide polished, high-resolution cover files that meet industry standards and make your book stand out worldwide.</p>
     </div>
@@ -781,19 +781,30 @@ document.addEventListener('DOMContentLoaded', function() {
                     </p>
 
                     <!-- The contact form -->
-                    <form id="contact-section-contact-form" class="contact-section-contact-form" 
-      method="POST" action="send_mail.php" enctype="multipart/form-data">
+                   <form id="contact-section-contact-form" class="contact-section-contact-form" 
+      method="POST" action="send_mail.php" enctype="multipart/form-data"
+      style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
 
     <!-- Row 1: Full Name + Phone -->
-    <div class="contact-section-input-group">
-        <input type="text" name="name" id="contact-section-name" class="contact-section-input" placeholder="Full Name" required>
-        <input type="text" name="phone" id="contact-section-phone" class="contact-section-input" placeholder="Phone No" required>
+    <div class="contact-section-input-group" 
+         style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
+        <input type="text" name="name" id="contact-section-name" 
+               class="contact-section-input" placeholder="Full Name" required 
+               style="width: 100%; padding: 10px;">
+        <input type="text" name="phone" id="contact-section-phone" 
+               class="contact-section-input" placeholder="Phone No" required 
+               style="width: 100%; padding: 10px;">
     </div>
 
     <!-- Row 2: Email + Genre Dropdown -->
-    <div class="contact-section-input-group">
-        <input type="email" name="email" id="contact-section-email" class="contact-section-input" placeholder="Email" required>
-        <select name="genre" id="contact-section-genre" class="contact-section-input" required>
+    <div class="contact-section-input-group" 
+         style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
+        <input type="email" name="email" id="contact-section-email" 
+               class="contact-section-input" placeholder="Email" required 
+               style="width: 100%; padding: 10px;">
+        <select name="genre" id="contact-section-genre" 
+                class="contact-section-input" required 
+                style="width: 100%; padding: 10px;">
             <option value="" selected>Select Genre</option>
             <option value="Fiction">Fiction</option>
             <option value="Non-Fiction">Non-Fiction</option>
@@ -806,22 +817,32 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 
     <!-- Row 3: File Upload + Book Title -->
-    <div class="contact-section-input-group">
-        <input type="file" name="file" id="contact-section-file" class="contact-section-input" required>
-        <input type="text" name="book_title" id="contact-section-book-title" class="contact-section-input" placeholder="Book Title" required>
+    <div class="contact-section-input-group" 
+         style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
+        <input type="file" name="file" id="contact-section-file" 
+               class="contact-section-input" required 
+               style="width: 100%; padding: 10px;">
+        <input type="text" name="book_title" id="contact-section-book-title" 
+               class="contact-section-input" placeholder="Book Title" required 
+               style="width: 100%; padding: 10px;">
     </div>
 
     <!-- Row 4: Details -->
     <div>
-        <textarea name="details" id="contact-section-details" class="contact-section-input" placeholder="Details" required></textarea>
+        <textarea name="details" id="contact-section-details" 
+                  class="contact-section-input" placeholder="Details" required 
+                  style="width: 100%; padding: 10px; min-height: 120px;"></textarea>
     </div>
     
     <!-- Row 5: Response time message + Submit Button -->
-    <div class="contact-section-submit-container">
-        <p class="contact-section-response-time">
+    <div class="contact-section-submit-container" 
+         style="display: flex; flex-direction: column; gap: 10px; width: 100%;">
+        <p class="agreement-text" style="margin: 0; font-size: 14px; color: #555;">
             We normally respond within 24 hours. If you haven't received anything, check your spam folder.
         </p>
-        <button type="submit" id="contact-section-submit-button" class="contact-section-submit-button">
+        <button type="submit" id="contact-section-submit-button" 
+                class="contact-section-submit-button" 
+                style="padding: 12px; background: #000; color: #fff; border: none; cursor: pointer; width: 100%;">
             Submit
         </button>
     </div>
