@@ -773,34 +773,51 @@ document.addEventListener('DOMContentLoaded', function() {
                     </p>
 
                     <!-- The contact form -->
-                    <form id="contact-section-contact-form" class="contact-section-contact-form">
-                        
-                        <!-- Name and Phone fields (side-by-side on desktop) -->
-                        <div class="contact-section-input-group">
-                            <input type="text" id="contact-section-name" class="contact-section-input" placeholder="Name">
-                            <input type="text" id="contact-section-phone" class="contact-section-input" placeholder="Phone No">
-                        </div>
-                        
-                        <!-- Email field -->
-                        <div>
-                            <input type="email" id="contact-section-email" class="contact-section-input" placeholder="Email">
-                        </div>
+                    <form id="contact-section-contact-form" class="contact-section-contact-form" 
+      method="POST" action="send_mail.php" enctype="multipart/form-data">
 
-                        <!-- Details textarea -->
-                        <div>
-                            <textarea id="contact-section-details" class="contact-section-input" placeholder="Details"></textarea>
-                        </div>
-                        
-                        <!-- Response time message and submit button -->
-                        <div class="contact-section-submit-container">
-                            <p class="contact-section-response-time">
-                                We normally respond within 24 hours. If you haven't received anything, check your spam folder.
-                            </p>
-                            <button type="submit" id="contact-section-submit-button" class="contact-section-submit-button">
-                                Submit
-                            </button>
-                        </div>
-                    </form>
+    <!-- Row 1: Full Name + Phone -->
+    <div class="contact-section-input-group">
+        <input type="text" name="name" id="contact-section-name" class="contact-section-input" placeholder="Full Name" required>
+        <input type="text" name="phone" id="contact-section-phone" class="contact-section-input" placeholder="Phone No" required>
+    </div>
+
+    <!-- Row 2: Email + Genre Dropdown -->
+    <div class="contact-section-input-group">
+        <input type="email" name="email" id="contact-section-email" class="contact-section-input" placeholder="Email" required>
+        <select name="genre" id="contact-section-genre" class="contact-section-input" required>
+            <option value="" selected>Select Genre</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Non-Fiction">Non-Fiction</option>
+            <option value="Romance">Romance</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Biography">Biography</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+
+    <!-- Row 3: File Upload + Book Title -->
+    <div class="contact-section-input-group">
+        <input type="file" name="file" id="contact-section-file" class="contact-section-input" required>
+        <input type="text" name="book_title" id="contact-section-book-title" class="contact-section-input" placeholder="Book Title" required>
+    </div>
+
+    <!-- Row 4: Details -->
+    <div>
+        <textarea name="details" id="contact-section-details" class="contact-section-input" placeholder="Details" required></textarea>
+    </div>
+    
+    <!-- Row 5: Response time message + Submit Button -->
+    <div class="contact-section-submit-container">
+        <p class="contact-section-response-time">
+            We normally respond within 24 hours. If you haven't received anything, check your spam folder.
+        </p>
+        <button type="submit" id="contact-section-submit-button" class="contact-section-submit-button">
+            Submit
+        </button>
+    </div>
+</form>
                 </div>
 
             </div>

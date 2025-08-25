@@ -127,7 +127,15 @@
 }
 
 /* Inputs, textarea, file upload */
-.get-free-form-container form input,
+.get-free-form-container form input,.get-free-form-container form select{
+    width: 48%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s ease;
+}
 .get-free-form-container form textarea,
 .get-free-form-container form button {
     width: 100%;
@@ -205,6 +213,7 @@
 /* Disclaimer text */
 .get-free-form-container .agreement-text {
     font-size: 12px;
+    margin-bottom: 15px;
     text-align: center;
     color: #555;
     line-height: 1.4;
