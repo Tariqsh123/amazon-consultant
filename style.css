@@ -2207,7 +2207,7 @@ header {
     font-size: small;
 }
 }
-@media (max-width: 350px) {
+@media (max-width: 600px) {
 .faq-icon-container {
     width: 24px;
     height: 18px;
