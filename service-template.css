@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+.service-header {
+    height: fit-content;
+    padding: 60px 20px;
+    width: 100%;
+    background-color: #0b1f3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-header-inner {
+    height: 100%;
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-header-left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.service-header-left h1 {
+    font-size: 40px;
+    text-align: left;
+    color: white;
+}
+
+.service-header-left p {
+    font-size: medium;
+    text-align: left;
+    color: white;
+}
+
+.service-header-right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-header-right img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .service-header {
+        height: fit-content;
+        padding: 30px 0;
+    }
+
+    .service-header-inner {
+        flex-direction: column;
+    }
+
+    .service-header-left {
+        height: fit-content;
+        padding: 30px;
+        width: 100%;
+    }
+
+    .service-header-right {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .service-header-right img {
+        height: auto;
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-header-left {
+        padding: 30px 0;
+    }
+
+    .service-header-left h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .service-header-left p {
+        font-size: small;
+        text-align: center;
+        width: 95%;
+    }
+
+    .service-header-right {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .service-header-right img {
+        height: auto;
+        width: 95%;
+    }
+    .about-solutiion-card-container{
+        flex-direction: column;
+    }
+    .about-solution-text-container h3{
+        text-align: center;
+    }
+    .about-solution-text-container p{
+        text-align: center;
+    }
+    .about-solution-text-container {
+    width: 100%;
+}
+}
