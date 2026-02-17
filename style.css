@@ -2416,7 +2416,7 @@ header {
         font-weight: bold;
         position: relative;
         cursor: pointer;
-        font-size: 12px;
+        font-size: 15px;
         overflow: hidden;
         transition: background-color 0.3s ease;
     }
