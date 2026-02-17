@@ -202,8 +202,9 @@
     align-items: center;
 }
 .idea-to-automate-right img{
-    height: 100%;
-    width: auto;
+    height: auto;
+    max-width: 600px;
+    width: 100%;
     object-fit: contain;
 }
 @media (max-width: 991px) {

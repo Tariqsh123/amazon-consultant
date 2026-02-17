@@ -1359,14 +1359,16 @@ header {
     position: relative;
     padding-left: 25px;
 }
-
+.automated-amazon-list li stop{
+    margin-bottom: 20px;
+}
 .automated-amazon-list li::before {
     content: '•';
     position: absolute;
     left: 0;
     font-size: 1.5rem;
     line-height: 1;
-    color: #f4b400;
+    color: #fff;
     /* A blue dot */
 }
 
@@ -1433,7 +1435,7 @@ header {
 
 @media (max-width: 768px) {
     .automated-amazon-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
     }
 
@@ -1441,14 +1443,14 @@ header {
     .automated-amazon-content-column {
         flex-basis: 100%;
     }
-    
+/*     
  .automated-amazon-list li {
         padding: 0;
         text-align: center;
         font-size: small;
-    }
-    .automated-amazon-list li::before {
-       display: none;    }
+    } */
+    /* .automated-amazon-list li::before {
+       display: none;    } */
 
     .automated-amazon-buttons {
         justify-content: center;
@@ -1461,8 +1463,8 @@ header {
     }
 
     .automated-amazon-list li {
-        padding: 0;
-        text-align: center;
+        /* padding: 0; */
+        text-align: left;
         font-size: small;
     }
 
@@ -1668,7 +1670,10 @@ header {
 /* Testimonial */
 /* review Carousel */
  #review-heading-section {
+    background-color: #ff99001f;
     text-align: center;
+    padding: 60px 0;
+    padding-bottom: 0;
   }
 
   .review-heading-container {
@@ -1715,8 +1720,8 @@ header {
     }
   }
  .carousel-container {
-    max-width: 1400px;
-    margin: 50px auto;
+    padding: 50px 0;
+    background-color: #ff99001f;
     overflow: hidden;
     position: relative;
 }
@@ -1913,7 +1918,7 @@ header {
 }
 
 .home-consultant-stats-wrapper {
-    background-color: #fff;
+    background-color: #fff0d8;
     padding: 40px;
     border-radius: 10px;
     /* margin-top: 50px; */
