@@ -8,7 +8,7 @@
     height: 500px;
     width: 100%;
     /* background-color: #0b1f3c; */
-    background-image: url('https://www.amazonconsultant.ae/assets/frontend/images/bg/about-banner.webp');
+    background-image: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ym9vayUyMHB1Ymxpc2hpbmd8ZW58MHx8MHx8fDA%3D');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,6 +16,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+.about-header::after{
+    content: '';
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0,0.5);
+    
 }
 .about-header-inner{
     height: 100%;
@@ -38,18 +49,17 @@
     font-size: 50px;
     width: 100%;
     text-align: left;
+    z-index: 1;
     color: white;
 }
 .about-header-left p{
+    z-index: 1;
     font-size: medium;
     text-align: left;
     color: white;
 }
-
-.about-header-left p{
-    font-size: medium;
-    text-align: left;
-    color: white;
+.about-header-left .header-left-btn-container{
+    z-index: 1;
 }
 .about-header-right{
     height: 100%;
@@ -394,22 +404,22 @@
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    align-items: flex-start;
+    align-items:center;
 }
 .counting-box h3{
     font-size: x-large;
     color: #ffa717;
-    text-align: left;
+    text-align: center;
 }
 .counting-box h4{
     font-size: large;
     color: #fff;
-    text-align: left;
+    text-align: center;
 }
 .counting-box p{
     font-size: medium;
     color: #fff;
-    text-align: left;
+    text-align: center;
 }
 @media (max-width: 600px) {
     .counting-main-container {
@@ -556,28 +566,29 @@
     flex-wrap: wrap;
 }
 .benifit-box{
-    height: fit-content;
+    height: 350px;
     border-radius: 20px;
     padding: 20px;
     width: 350px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     align-items: flex-start;
     flex-direction: column;
     box-shadow: 1px 1px 5px rgb(0,0,0,0.3);
 }
 .benifit-box img{
-    height: 80px;
+    height: 60px;
     width: auto;
     object-fit: contain;
 }
 .benifit-box h3{
-    font-size: x-large;
+    font-size: large;
 }
 
 .benifit-box p{
     font-size: medium;
+    height: 200px;
 }
 @media (max-width: 1200px) {
     .benifits-main-inner-container h2{
@@ -684,7 +695,10 @@
 
 
 h1,h2,h3,h4,h5,h6{
+    font-weight: 900 !important;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: normal !important;
+    letter-spacing: normal !important;
 }
 h1 span,h2 span,h3 span,h4 span,h5 span,h6 span{
     color: #ff9900;
