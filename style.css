@@ -471,7 +471,7 @@ header {
     font-weight: 600;
     align-items: center;
     position: relative;
-    font-size: 12.5px;
+    font-size: 16px;
     cursor: pointer;
     overflow: hidden;
 }
@@ -1246,6 +1246,8 @@ header {
 
 .to-drive-success-highlight {
     color: #f4b400;
+    display: block;
+    padding-top: 20px;
     font-size: large;
 }
 
@@ -1264,6 +1266,11 @@ header {
 .to-drive-success-list li {
     margin-bottom: 12px;
     font-size: 16px;
+    text-align: left;
+}
+.to-drive-success-list li strong{
+    display: block;
+    padding-bottom: 10px;
 }
 
 /* Right Image */
@@ -1613,16 +1620,19 @@ header {
 .pricing-buttons-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 15px;
     margin-top: 30px;
 }
 
 .pricing-button {
     display: inline-block;
-    padding: 12px 25px;
+    padding: 0;
+    padding: 12px 25px !important;
     text-decoration: none;
     font-weight: bold;
+    font-size: 15px;
+    width: fit-content;
     border-radius: 5px;
     transition: background-color 0.3s ease;
     white-space: nowrap;
