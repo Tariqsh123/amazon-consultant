@@ -35,7 +35,7 @@
     align-items: center;
 }
 .about-header-left h1{
-    font-size: 40px;
+    font-size: 50px;
     width: 100%;
     text-align: left;
     color: white;
@@ -89,7 +89,7 @@
         padding: 30px 0;
     }
     .about-header-left h1 {
-        font-size: 22px;
+        font-size: 35px;
         text-align: center;
     }
     .about-header-left p {
@@ -175,7 +175,7 @@
     flex-direction: column;
 }
 .idea-to-automate-left h2{
-    font-size: 40px;
+    font-size: 50px;
     width: 100%;
     text-align: left;
 }
@@ -213,7 +213,7 @@
     width: 100%;
 }
 .idea-to-automate-left h2{
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
 }
 .idea-to-automate-left p{
@@ -227,7 +227,7 @@
 }
 @media (max-width: 600px) {
 .idea-to-automate-left h2{
-    font-size: 22px;
+    font-size: 35px;
 }
 .idea-to-automate-left p{
     font-size: small;
@@ -247,11 +247,11 @@
 .about-solution-heading-container h2{
     text-align: center;
     width: 95%;
-    font-size: 40px;
+    font-size: 50px;
 }
 @media (max-width: 600px) {
 .about-solution-heading-container h2{
-    font-size: 22px;
+    font-size: 35px;
 }
 }
 /* Card container */
@@ -376,7 +376,7 @@
 }
 .counting-main-inner-container h2{
     text-align: left;
-    font-size: 30px;
+    font-size: 50px;
     color: white;
     width: 100%;
 }
@@ -418,7 +418,7 @@
     }
     .counting-main-inner-container h2 {
     text-align: center;
-    font-size: 22px
+    font-size: 35px
    }
    .counting-boxes-container {
     flex-direction: column;
@@ -476,7 +476,7 @@
   }
 
   .transforming-heading {
-    font-size: clamp(1.5rem, 2.2vw + 1rem, 2.25rem);
+    font-size: 50px;
     line-height: 1.2;
     margin: 0 0 12px 0;
     color: #0f172a;
@@ -510,7 +510,7 @@
   }
     @media (max-width: 600px) {
     .transforming-heading {
-    font-size: 22px;
+    font-size: 35px;
     text-align: center;
   }
   .transforming-paragraph {
@@ -540,7 +540,7 @@
     align-items: center;
 }
 .benifits-main-inner-container h2{
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     margin-bottom: 30px;
     width: 100%;
@@ -590,7 +590,7 @@
 @media (max-width: 991px){
        .benifits-main-inner-container h2{
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
 }
 .benifit-box{
     height: fit-content;
@@ -607,7 +607,7 @@
 }
 @media (max-width: 600px) {
 .benifits-main-inner-container h2{
-    font-size: 22px;
+    font-size: 35px;
     text-align: center;
 }
 }
@@ -680,4 +680,12 @@
     text-align: center;
     font-size: medium;
     color: orangered;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1 span,h2 span,h3 span,h4 span,h5 span,h6 span{
+    color: #ff9900;
 }

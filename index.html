@@ -188,7 +188,7 @@
 
 <!-- Start your Store  -->
  <div class="start-your-store-text-container">
-  <h2>Achieve Excellence with Our Affordable Book Publishing Solutions in UAE</h2>
+  <h2>Achieve Excellence with Our Affordable  Book Publishing Solutions in UAE</h2>
   <p>Why do so many aspiring authors across the Emirates choose us? At Gulf Book Publishers, we combine global quality and publishing standards with Gulf affordability, ensuring your investment builds a legacy, not just a book. Here is how we deliver unmatched value for first-time authors and experienced writers.</p>
 </div>
 
@@ -674,9 +674,9 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
     
   </div>
-  <div class="pricing-buttons-container">
-            <a href="get-free-quote.css" title="get started" class="pricing-button header-left-primary-btn" style="color: black;">Launch My Amazon Store</a>
-            <a href="tel:+971542265592" title="Phone" class="pricing-button pricing-button-phone">+971 542 265 592</a>
+  <div class="award-winning-button-container" style="margin-top: 50px;">
+            <a href="get-free-quote.html" title="Get Started" class="pricing-button header-left-primary-btn" style="color: black;">Launch My Amazon Store</a>
+            <a href="reviews.html" title="Reviews" class="pricing-button pricing-button-phone">Read More Success Stories</a>
         </div>
 </div>
 
@@ -777,8 +777,8 @@ $(function(){
                     This Gulf-wide reach increases visibility, supports multilingual audiences, and creates opportunities for cross-market growth, rights expansion and broader readership across both print and digital platforms.
                 </p>
                 <div class="pricing-buttons-container">
-            <a href="get-free-quote.html" title="get-free-quote" class="pricing-button header-left-primary-btn" style="color: black;">Launch My Amazon Store</a>
-            <a href="tel:+971542265592" title="Phone" class="pricing-button pricing-button-phone">+971 542 265 592</a>
+            <a href="get-free-quote.html" title="get-free-quote" class="pricing-button header-left-primary-btn" style="color: black;">Start Publishing in Your City</a>
+            <a href="get-free-quote.css" title="Get Started" class="pricing-button pricing-button-phone">Get a Localized Publishing Strategy</a>
         </div>
             </div>
         </div>
@@ -879,12 +879,6 @@ $(function(){
         </p>
       </div>
     </div>
-     <div class="award-winning-button-container">
-            <a href="get-free-quote.html" title="Get Started" class="pricing-button header-left-primary-btn" style="color: black;">Launch My Amazon Store</a>
-            <a href="tel:+971542265592" title="Phone" class="pricing-button pricing-button-phone">+971 542 265 592</a>
-        </div>
-
-    
 
   </div>
 </section>
@@ -1072,6 +1066,11 @@ $(function(){
 document.addEventListener('DOMContentLoaded', function() {
     const faqItems = document.querySelectorAll('.faq-item');
 
+    // Open the first FAQ item on page load
+    if (faqItems.length > 0) {
+        faqItems[0].classList.add('active');
+    }
+
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         question.addEventListener('click', () => {
@@ -1080,6 +1079,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+
 
 <section id="contact-section-main" class="contact-section-main">
         <div class="contact-section-card">

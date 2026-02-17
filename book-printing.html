@@ -468,6 +468,10 @@
     </div>
 
   </div>
+  <div class="award-winning-button-container" style="margin-top: 50px;">
+            <a href="get-free-quote.html" title="Get Started" class="pricing-button header-left-primary-btn" style="color: black;">Launch My Amazon Store</a>
+            <a href="reviews.html" title="Reviews" class="pricing-button pricing-button-phone">Read More Success Stories</a>
+        </div>
 </div>
 
 
@@ -552,16 +556,16 @@ $(function(){
     </div>
     <div class="automated-amazon-content-column">
       <h2 class="automated-amazon-heading">Simple Steps Behind Professional Book Printing Abu Dhabi Experience</h2>
-      <p>Many authors feel either the process is hectic or you don't get control. We remove that stress through guided support, clear options and structured workflows, giving you confidence and flexibility throughout production.</p>
+      <!-- <p>Many authors feel either the process is hectic or you don't get control. We remove that stress through guided support, clear options and structured workflows, giving you confidence and flexibility throughout production.</p> -->
       <ul class="automated-amazon-list">
         <li><strong>Customize & Place Order</strong><br>Choose paper type, size, binding and quantity with our book printing firm that offers 100% customization. Our platform supports seamless book printing online, allowing authors to upload files, review proofs and confirm specifications while staying in full control.</li>
         <li><strong>We'll Do Our Printing Magic</strong><br>After approval, our production team begins printing magic using advanced presses and quality checks. Known among the best book printing services in UAE, we ensure accurate colors, durable binding and professional finishing for every batch.</li>
         <li><strong>Dispatch Right to Your Home</strong><br>Finished books are packed securely and shipped quickly. Our network supports the most affordable personalized book printing with reliable delivery across UAE and Gulf countries, ensuring authors receive copies safely and on time for sales or events.</li>
       </ul>
-      <div class="automated-amazon-buttons">
+      <!-- <div class="automated-amazon-buttons">
         <a href="get-free-quote.html" title="Get Started"  class="automated-amazon-button automated-amazon-build-store">Start My Printing Project</a>
         <a href="tel:+971542265592" title="Phone" class="automated-amazon-button automated-amazon-phone">+971 542 265 592</a>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -814,6 +818,11 @@ $(function(){
 document.addEventListener('DOMContentLoaded', function() {
     const faqItems = document.querySelectorAll('.faq-item');
 
+    // Open the first FAQ item on page load
+    if (faqItems.length > 0) {
+        faqItems[0].classList.add('active');
+    }
+
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         question.addEventListener('click', () => {
@@ -822,6 +831,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+
 
 
 <section id="above-footer-container" class="above-footer-container">

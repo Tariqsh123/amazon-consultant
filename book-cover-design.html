@@ -461,6 +461,10 @@
       </div>
     </div>
   </div>
+  <div class="award-winning-button-container" style="margin-top: 50px;">
+            <a href="get-free-quote.html" title="Get Started" class="pricing-button header-left-primary-btn" style="color: black;">Launch My Amazon Store</a>
+            <a href="reviews.html" title="Reviews" class="pricing-button pricing-button-phone">Read More Success Stories</a>
+        </div>
 </div>
 
 
@@ -550,10 +554,10 @@ $(function(){
         <li><strong>Client Approval and Revisions</strong><br>You review concepts and share feedback openly. We provide unlimited free revisions so every detail aligns with your vision. Designers refine typography, color and imagery while keeping communication clear, ensuring collaboration stays smooth and the cover evolves exactly how you imagined.</li>
         <li><strong>Final Design File Delivery</strong><br>Once approved, we prepare high-resolution print files and optimized eBook cover design versions. Files meet platform and printer standards. You receive ready-to-publish assets, ensuring consistent appearance across digital stores and physical copies without technical issues or formatting delays.</li>
       </ul>
-      <div class="automated-amazon-buttons">
+      <!-- <div class="automated-amazon-buttons">
         <a href="get-free-quote.html" class="automated-amazon-button automated-amazon-build-store">Start My Cover Design Project</a>
         <a href="tel:+971542265592" class="automated-amazon-button automated-amazon-phone">+971 542 265 592</a>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -803,6 +807,11 @@ $(function(){
 document.addEventListener('DOMContentLoaded', function() {
     const faqItems = document.querySelectorAll('.faq-item');
 
+    // Open the first FAQ item on page load
+    if (faqItems.length > 0) {
+        faqItems[0].classList.add('active');
+    }
+
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         question.addEventListener('click', () => {
@@ -811,6 +820,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+
 
 
 <section id="above-footer-container" class="above-footer-container">

@@ -470,6 +470,10 @@
     </div>
 
   </div>
+  <div class="award-winning-button-container" style="margin-top: 50px;">
+            <a href="get-free-quote.html" title="Get Started" class="pricing-button header-left-primary-btn" style="color: black;">Launch My Amazon Store</a>
+            <a href="reviews.html" title="Reviews" class="pricing-button pricing-button-phone">Read More Success Stories</a>
+        </div>
 </div>
 
 
@@ -555,17 +559,17 @@ $(function(){
     </div>
     <div class="automated-amazon-content-column">
       <h2 class="automated-amazon-heading">Step-by-Step Publishing Process Designed for Children’s Authors in Gulf</h2>
-      <p>Our children’s book publishing process is designed to guide authors across UAE, Saudi Arabia, and GCC countries from manuscript to print or digital launch. Each step ensures quality, age-appropriate content, and visual appeal for young readers.</p>
+      <!-- <p>Our children’s book publishing process is designed to guide authors across UAE, Saudi Arabia, and GCC countries from manuscript to print or digital launch. Each step ensures quality, age-appropriate content, and visual appeal for young readers.</p> -->
       <ul class="automated-amazon-list">
         <li><strong>Manuscript Review Stage</strong><br>Our professional children’s book publishers begin with a detailed review of your manuscript. We assess age suitability, language clarity, and story flow. Early feedback shapes structure and prepares the book for editing, illustration planning, and smooth progression through the publishing journey.</li>
         <li><strong>Editing & Proofreading Phase</strong><br>During editing, we refine grammar, tone, and readability for children. Our team also prepares book formatting (print & eBook) foundations, ensuring the story fits visual layouts. This stage strengthens clarity while preserving your voice and message for young audiences.</li>
         <li><strong>Illustration & Cover Design</strong><br>Artists and designers create engaging visuals that align with your story’s theme. We coordinate character development, scene direction, and cover appeal. If required, we also prepare files for Amazon KDP setup, keeping artwork and layout ready for digital and print use.</li>
         <li><strong>Printing & Distribution</strong><br>Once finalized, we manage production and reach. Being trusted by authors across UAE & GCC, we handle printing coordination, digital uploads, and distribution planning, helping children’s books reach schools, retailers, and online stores across the Gulf and beyond.</li>
       </ul>
-      <div class="automated-amazon-buttons">
+      <!-- <div class="automated-amazon-buttons">
         <a href="get-free-quote.html" title="Get Started"  class="automated-amazon-button automated-amazon-build-store">Start My Children’s Book Publishing</a>
         <a href="tel:+971542265592" title="Phone" class="automated-amazon-button automated-amazon-phone">+971 542 265 592</a>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -819,6 +823,11 @@ $(function(){
 document.addEventListener('DOMContentLoaded', function() {
     const faqItems = document.querySelectorAll('.faq-item');
 
+    // Open the first FAQ item on page load
+    if (faqItems.length > 0) {
+        faqItems[0].classList.add('active');
+    }
+
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         question.addEventListener('click', () => {
@@ -827,6 +836,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+
 
 <section id="above-footer-container" class="above-footer-container">
   <div class="above-footer-content">

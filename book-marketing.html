@@ -470,6 +470,10 @@
     </div>
 
   </div>
+  <div class="award-winning-button-container" style="margin-top: 50px;">
+            <a href="get-free-quote.html" title="Get Started" class="pricing-button header-left-primary-btn" style="color: black;">Launch My Amazon Store</a>
+            <a href="reviews.html" title="Reviews" class="pricing-button pricing-button-phone">Read More Success Stories</a>
+        </div>
 </div>
 
 
@@ -555,17 +559,17 @@ $(function(){
     </div>
     <div class="automated-amazon-content-column">
       <h2 class="automated-amazon-heading">Book Optimization & Positioning Strategy for Stronger Sales Performance</h2>
-      <p>Our strategic book marketing process helps authors across UAE and GCC maximize visibility, engagement, and sales. Each stage ensures your book enters the market with strong positioning and optimized exposure for target readers.</p>
+      <!-- <p>Our strategic book marketing process helps authors across UAE and GCC maximize visibility, engagement, and sales. Each stage ensures your book enters the market with strong positioning and optimized exposure for target readers.</p> -->
       <ul class="automated-amazon-list">
         <li><strong>Research Driven Planning Stage</strong><br>Using market research & strategy, we study genre demand, reader behavior, and competitor positioning. This foundation guides messaging, pricing direction, and visibility tactics so your book enters the market with informed, purposeful positioning.</li>
         <li><strong>Listing Setup Optimization</strong><br>We manage Amazon KDP marketing setup, refining descriptions, keywords, and categories. Optimized listings improve discoverability and reader conversion, making your book easier to find and more appealing once discovered.</li>
         <li><strong>Cross Channel Expansion</strong><br>Through multi-platform distribution, we extend reach beyond a single storefront. This broader presence increases exposure, helping authors connect with varied reader groups across digital ecosystems and regional markets.</li>
         <li><strong>Performance Growth Phase</strong><br>Execution focuses on visibility and engagement that help sell more books with expert marketing. Continuous adjustments keep campaigns aligned with reader behavior, supporting steady sales momentum beyond the initial launch period.</li>
       </ul>
-      <div class="automated-amazon-buttons">
+      <!-- <div class="automated-amazon-buttons">
         <a href="get-free-quote.html" title="Get Started" class="automated-amazon-button automated-amazon-build-store">Request Your Book Marketing Strategy</a>
         <a href="tel:+971542265592" title="Phone" class="automated-amazon-button automated-amazon-phone">+971 542 265 592</a>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -820,6 +824,11 @@ $(function(){
 document.addEventListener('DOMContentLoaded', function() {
     const faqItems = document.querySelectorAll('.faq-item');
 
+    // Open the first FAQ item on page load
+    if (faqItems.length > 0) {
+        faqItems[0].classList.add('active');
+    }
+
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         question.addEventListener('click', () => {
@@ -828,6 +837,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+
 
 <section id="above-footer-container" class="above-footer-container">
   <div class="above-footer-content">

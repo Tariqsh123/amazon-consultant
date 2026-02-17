@@ -5,7 +5,8 @@
 }
 /* header */
 .contact-header{
-    height: 500px;
+    height: fit-content;
+    padding: 60px 0;
     width: 100%;
     background-color: #0b1f3c;
     display: flex;
@@ -30,7 +31,7 @@
     align-items: center;
 }
 .contact-header-left h1{
-    font-size: 40px;
+    font-size: 50px;
     text-align: left;
     color: white;
 }
@@ -82,7 +83,7 @@
     padding: 30px 0;
 }
 .contact-header-left h1 {
-    font-size: 22px;
+    font-size: 35px;
     text-align: center;}
     .contact-header-left p {
     font-size: small;

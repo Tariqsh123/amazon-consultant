@@ -468,6 +468,10 @@
     </div>
 
   </div>
+     <div class="award-winning-button-container" style="margin-top: 50px;">
+            <a href="get-free-quote.html" title="Get Started" class="pricing-button header-left-primary-btn" style="color: black;">Launch My Amazon Store</a>
+            <a href="reviews.html" title="Reviews" class="pricing-button pricing-button-phone">Read More Success Stories</a>
+        </div>
 </div>
 
 
@@ -553,17 +557,17 @@ $(function(){
     </div>
     <div class="automated-amazon-content-column">
       <h2 class="automated-amazon-heading">Simple 7-Day Audiobook Publishing Process Across Gulf</h2>
-      <p>Authors across UAE, Saudi Arabia, and Gulf countries can publish audiobooks fast while maintaining full control and studio-level quality. Our process is clear, efficient, and designed to meet global standards in just 7 days.</p>
+      <!-- <p>Authors across UAE, Saudi Arabia, and Gulf countries can publish audiobooks fast while maintaining full control and studio-level quality. Our process is clear, efficient, and designed to meet global standards in just 7 days.</p> -->
       <ul class="automated-amazon-list">
         <li><strong>Manuscript Submission and Review</strong><br>You send your manuscript through our audiobook publishing services Gulf portal. We review tone, length, and narration style. Within one day, we confirm direction, voice type, and production plan, keeping communication clear so authors feel confident from the start.</li>
         <li><strong>Voice Match Production Setup</strong><br>We assign narrators and begin professional production planning. Accent, pacing, and genre style are aligned with your audience. Recording schedules are locked quickly so the project moves without delays, keeping everything on track for a smooth 7-day turnaround.</li>
         <li><strong>Studio Recording & Editing Phase</strong><br>Your audiobook enters recording, sound cleanup, and mastering. This stage prepares files for Amazon publishing and other platforms. Audio quality, clarity, and consistency are checked carefully to ensure your work meets global standards and listener expectations.</li>
         <li><strong>Distribution and Launch Stage</strong><br>Final files are uploaded and you officially publish your audiobook worldwide. Metadata, cover, and platform formatting are handled for you. Within days, your title is live, discoverable, and earning across major listening platforms.</li>
       </ul>
-      <div class="automated-amazon-buttons">
+      <!-- <div class="automated-amazon-buttons">
         <a href="get-free-quote.html" title="Get Started"  class="automated-amazon-button automated-amazon-build-store">Publish My Audiobook Now</a>
         <a href="tel:+971542265592" title="Phone" class="automated-amazon-button automated-amazon-phone">+971 542 265 592</a>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -816,6 +820,11 @@ $(function(){
 document.addEventListener('DOMContentLoaded', function() {
     const faqItems = document.querySelectorAll('.faq-item');
 
+    // Open the first FAQ item on page load
+    if (faqItems.length > 0) {
+        faqItems[0].classList.add('active');
+    }
+
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         question.addEventListener('click', () => {
@@ -824,6 +833,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+
 
 <section id="above-footer-container" class="above-footer-container">
   <div class="above-footer-content">
