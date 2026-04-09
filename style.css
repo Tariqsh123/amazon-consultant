@@ -119,6 +119,8 @@ body {
 
 .navbar .logo {
     height: 85px;
+    position: relative;
+    top: 5px;
     width: auto;
     object-fit: contain;
 }
@@ -1794,7 +1796,7 @@ header {
     left: 0;
     width: 100%;
     height: 80%; 
-    background-color: #0b1f3c;
+    background-color: #d6d6d6;
     z-index: -1;
 }
 
@@ -1835,13 +1837,12 @@ header {
 
 .home-consultant-right {
     padding: 20px 15px;
-    color: #fff; /* White text for contrast on the dark background */
 }
 
 .home-consultant-title {
     font-size: 35px;
     font-weight: bold;
-    color: #fff;
+    color: #0f1f2d;
     margin-bottom: 20px;
 }
 
@@ -1854,7 +1855,7 @@ header {
 .home-consultant-item {
     font-size: 1rem;
     line-height: 1.6;
-    color: #f1f1f1;
+    color: black;
     position: relative;
     padding-left: 25px;
     margin-bottom: 10px;
@@ -2059,6 +2060,7 @@ header {
   padding-bottom: 0;
   position: relative;
   overflow: hidden;
+  background-color: #0f1f2d;
 }
 
 .award-winning-container {
@@ -2069,6 +2071,7 @@ header {
 
 /* ---------- Header ---------- */
 .award-winning-heading {
+    color: white;
     font-size: 50px;
   font-weight: 800;
   line-height: 1.2;
@@ -2080,6 +2083,7 @@ header {
 
 .award-winning-subheading {
   max-width: 850px;
+  color: white;
   margin: 0 auto 70px;
   font-size: medium;
   line-height: 1.7;
