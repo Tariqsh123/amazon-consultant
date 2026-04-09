@@ -5,7 +5,7 @@
 }
 /* header */
 .about-header{
-    height: 500px;
+    height: fit-content;
     width: 100%;
     /* background-color: #0b1f3c; */
     background-image: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ym9vayUyMHB1Ymxpc2hpbmd8ZW58MHx8MHx8fDA%3D');
@@ -15,12 +15,13 @@
     background-clip: border-box;
     display: flex;
     justify-content: center;
+    padding: 50px 10px;
     align-items: center;
     position: relative;
 }
 .about-header::after{
     content: '';
-    height: 500px;
+    height: 100%;
     width: 100%;
     position: absolute;
     top: 0;

@@ -959,14 +959,22 @@ header {
 }
 }
  #book-carousel-main-container {
-    height: 500px;
+    height: fit-content;
     width: 95%;
     padding: 40px 0;
     max-width: 1400px;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
   }
-
+ #book-carousel-main-container img{
+    height: auto;
+    width: 100%;
+    max-width: 900px;
+    object-fit: contain;
+ }
   .swiper {
     width: 100%;
     height: 100%;
