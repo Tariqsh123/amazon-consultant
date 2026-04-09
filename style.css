@@ -41,6 +41,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 #above-nav-right-box {
@@ -117,7 +118,7 @@ body {
 }
 
 .navbar .logo {
-    height: 50px;
+    height: 85px;
     width: auto;
     object-fit: contain;
 }
@@ -2499,7 +2500,7 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px;
+            padding: 10px 20px;
             border-bottom: 1px solid #ddd;
             max-width: 1200px;
             margin: 0 auto;
@@ -2511,7 +2512,9 @@ header {
         }
 
         .footer-top-left img {
-            height: 50px;
+            height: 150px;
+            width: auto;
+            object-fit: contain;
         }
 
         .footer-top-right {
