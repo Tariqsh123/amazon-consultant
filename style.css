@@ -2269,7 +2269,7 @@ header {
 }
 
 .faq-icon {
-    width: 100%;
+    width: auto;
     height: 100%;
     color: #000;
     background-color: #ffa717;
@@ -2370,8 +2370,8 @@ header {
 }
 @media (max-width: 600px) {
 .faq-icon-container {
-    width: 24px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
 }
 }
 
