@@ -168,17 +168,18 @@
 /* Idea To Automate */
 .idea-to-automate-main{
     height: fit-content;
-    width: 95%;
-    max-width: 1200px;
+    width: 100%;
     padding: 60px 20px;
     margin: 20px auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    background-color: white;
     align-items: center;
 }
 .idea-to-automate-left{
     height: 100%;
     width: 48%;
+    max-width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,6 +198,7 @@
 }
 .idea-to-automate-right{
     height: 100%;
+    max-width: 600px;
     width: 48%;
     display: flex;
     justify-content: center;
